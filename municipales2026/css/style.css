@@ -631,7 +631,7 @@ tr:hover td {
   overflow: auto; /* Permet le scroll si zoomé */
   position: relative; /* Pour le contexte */
   width: 100%;
-  max-height: 80vh; /* Limite la hauteur sur grand écran pour pas scroller la page entière */
+  /* max-height constraint removed so the map is fully visible on desktop */
 }
 
 /* Force les contrôles de zoom à être visibles/propres */
