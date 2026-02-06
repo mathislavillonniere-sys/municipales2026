@@ -44,6 +44,13 @@
     /* --- AUTRES --- */
     --color-reg: #8b4513;      /* Régionalistes */
     --color-div: #cccccc;      /* Divers / Sans étiquette */
+
+    /* --- AUTRES PETITS PARTIS --- */
+    --color-dlf: #004b87;        /* Debout la France */
+    --color-patriotes: #6f2da8;  /* Les Patriotes */
+    --color-animaliste: #ff69b4; /* Parti Animaliste */
+    --color-gen-s: #b3006b;      /* Génération·s */
+    --color-cpnt: #6b8e23;       /* CPNT (Chasse, Pêche, Nature & Traditions) */
 }
 
 /* --- CLASSES D'ARRIÈRE-PLAN (Backgrounds) --- */
@@ -89,6 +96,13 @@
 .bg-reg { background-color: var(--color-reg); color: white; }
 .bg-div { background-color: var(--color-div); color: #333; }
 
+/* Autres petits partis */
+.bg-dlf { background-color: var(--color-dlf); color: white; }
+.bg-patriotes { background-color: var(--color-patriotes); color: white; }
+.bg-animaliste { background-color: var(--color-animaliste); color: #333; }
+.bg-gen-s { background-color: var(--color-gen-s); color: white; }
+.bg-cpnt { background-color: var(--color-cpnt); color: white; }
+
 
 /* --- CLASSES DE TEXTE --- */
 
@@ -132,6 +146,13 @@
 /* Autres */
 .text-reg { color: var(--color-reg); }
 .text-div { color: var(--color-div); }
+
+/* Autres petits partis */
+.text-dlf { color: var(--color-dlf); }
+.text-patriotes { color: var(--color-patriotes); }
+.text-animaliste { color: var(--color-animaliste); }
+.text-gen-s { color: var(--color-gen-s); }
+.text-cpnt { color: var(--color-cpnt); }
 
 /* --- CLASSES PASTILLES (Badge) --- */
 .badge-party {

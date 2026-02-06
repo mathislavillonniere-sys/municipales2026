@@ -3339,9 +3339,10 @@ function latLonToPercent(lat, lon) {
   const y =
     ((MAP_BOUNDS.maxLat - lat) / (MAP_BOUNDS.maxLat - MAP_BOUNDS.minLat)) * 100;
 
+  // Modification : On laisse les valeurs dépasser 0 et 100 pour que les points (ex: Nord) puissent dépasser
   return {
-    x: Math.max(0, Math.min(100, x)),
-    y: Math.max(0, Math.min(100, y)),
+    x: x,
+    y: y,
   };
 }
 

@@ -148,6 +148,8 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 0;
   overflow: visible; /* Permet aux pins du haut (Lille) de dépasser sans être coupés */
+  /* Marge supérieure supplémentaire pour éloigner la carte du header */
+  margin-top: 90px;
 }
 
 /* Conteneur image-map */
@@ -648,7 +650,7 @@ tr:hover td {
 #map {
   /* ...existing code... */
   z-index: 0;
-  overflow: auto; /* Permet le scroll si zoomé */
+  overflow: visible; /* Permet aux pins du haut de dépasser (modifié pour villes du nord) */
   position: relative; /* Pour le contexte */
   width: 100%;
   /* max-height constraint removed so the map is fully visible on desktop */
@@ -3522,4 +3524,11 @@ header {
 #map-section.active ~ #global-poll-disclaimer,
 #details-section.active ~ #global-poll-disclaimer {
   display: block;
+}
+
+/* Fix pour les pins qui disparaissent au survol de la carte map */
+@media (min-width: 1025px) {
+  #image-map:hover .pin {
+    position: absolute !important;
+  }
 }
