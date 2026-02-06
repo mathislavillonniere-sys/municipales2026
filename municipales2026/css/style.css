@@ -119,6 +119,26 @@ h1 {
   font-size: 1.1rem;
 }
 
+@media (max-width: 767px) {
+  .hero-banner {
+    height: 180px;
+  }
+
+  .hero-content {
+    width: 92%;
+    padding: 12px 16px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
+
 /* --- LA CARTE --- */
 #map {
   /* Suppression de la hauteur fixe pour s'adapter à l'image */
