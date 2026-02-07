@@ -10,6 +10,15 @@
   --text-color: #1f2937;
 }
 
+ 
+html, body {
+  /* Empêche le défilement horizontal global causé par des éléments trop larges */
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+ 
+}
+
 body {
   font-family:
     "Inter",
@@ -143,13 +152,19 @@ h1 {
 #map {
   /* Suppression de la hauteur fixe pour s'adapter à l'image */
   height: auto;
-  width: 100%;
+  width: 100%; /* S'assure que le conteneur ne dépasse pas le parent */
+  max-width: 100%; /* Sécurité supplémentaire */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 0;
-  overflow: visible; /* Permet aux pins du haut (Lille) de dépasser sans être coupés */
-  /* Marge supérieure supplémentaire pour éloigner la carte du header */
-  margin-top: 90px;
+  
+  /* Le zoom est géré par transform, on masque donc les débordements */
+  overflow: hidden;
+  
+  /* Margin top réduite */
+  margin-top: 20px;
+  position: relative; 
+  background-color: #ffffff; /* Couleur mer par défaut en fond */
 }
 
 /* Conteneur image-map */
@@ -158,6 +173,8 @@ h1 {
   width: 100%;
   /* Largeur max pour ne pas faire trop grand sur PC */
   max-width: 800px;
+  /* On prend la main sur tous les gestes tactiles (pan + pinch) */
+  touch-action: none;
   margin: 0 auto;
 
   border: 1px solid #ccc;
@@ -661,13 +678,34 @@ tr:hover td {
   display: none; /* Masqués par défaut (desktop) */
 }
 
+/* On s'assure que la section carte est positionnée pour accueillir les contrôles en absolute */
+#map-section {
+  position: relative;
+}
+
 @media (max-width: 1024px) {
   #map-controls {
     display: flex; /* Visibles sur tablettes et mobiles */
     gap: 10px;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+    
+    /* Positionnement en surimpression de la carte (Overlay) */
+    position: absolute;
+    top: 10px;      /* Légèrement décalé du haut de la carte */
+    right: 10px;    /* et à droite, ou left: 50% / transform: translateX(-50%) pour centrer */
+    z-index: 1000;  /* Au-dessus de la carte et des pins */
+    
+    justify-content: center;
+    margin-bottom: 0;
   }
+  
+  /* Optionnel : Centrer les boutons si souhaité au lieu de droite */
+  /*
+  #map-controls {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  */
 }
 
 #map-controls button {

@@ -3354,77 +3354,186 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnIn = document.getElementById("btn-zoom-in");
     const btnOut = document.getElementById("btn-zoom-out");
     const imageMap = document.getElementById("image-map");
+    const mapViewport = document.getElementById("map");
 
-    if (!btnIn || !btnOut || !imageMap) {
+    if (!btnIn || !btnOut || !imageMap || !mapViewport) {
       console.warn("Zoom controls or map not found");
       return;
     }
 
     let currentScale = 1;
+    let translateX = 0;
+    let translateY = 0;
     const MIN_SCALE = 1;
     const MAX_SCALE = 4;
 
     // Reset pour être sûr
-    imageMap.style.transformOrigin = "top left";
-    imageMap.style.transition = "width 0.2s ease-out";
+    imageMap.style.transformOrigin = "0 0";
+    imageMap.style.transition = "transform 0.2s ease-out";
 
-    const applyScale = () => {
+    const clampState = () => {
       if (currentScale < MIN_SCALE) currentScale = MIN_SCALE;
       if (currentScale > MAX_SCALE) currentScale = MAX_SCALE;
 
-      // IMPORTANT : On retire la contrainte de largeur max pour permettre le zoom
-      imageMap.style.maxWidth = "none";
+      const viewportWidth = mapViewport.clientWidth;
+      const viewportHeight = mapViewport.clientHeight;
+      const contentWidth = imageMap.offsetWidth * currentScale;
+      const contentHeight = imageMap.offsetHeight * currentScale;
 
-      // Application de la largeur en pourcentage
-      imageMap.style.width = (currentScale * 100) + "%";
+      const maxOffsetX = Math.max(0, contentWidth - viewportWidth);
+      const maxOffsetY = Math.max(0, contentHeight - viewportHeight);
 
-      // Correction de la taille des pins
-      const pins = document.querySelectorAll(".pin");
-      // Détection mobile basique (basée sur la largeur ou pointer)
-      const isMobile = window.innerWidth <= 1024;
-
-      pins.forEach(pin => {
-        if (isMobile) {
-          // Sur mobile, on veut que les points grossissent avec le zoom pour être cliquables
-          // On utilise une échelle qui grandit modérément (racine carrée du zoom)
-          // scale(1) = taille normale, scale(2) = 2x plus visuellement...
-          // Mais vu que le zoom augmente la largeur container, ne rien faire (scale 1 constant)
-          // les laisse "petits" par rapport à la carte.
-          // Pour les faire "grossir en fonction du zoom", il faut augmenter leur scale.
-          const mobileScale = Math.sqrt(currentScale);
-          pin.style.transform = `translate(-50%, -50%) scale(${mobileScale})`;
-        } else {
-          // Sur desktop (si le zoom est activé), on garde le comportement "taille fixe apparente"
-          // (Note: le code original scale(1/currentScale) réduisait la taille en pixels
-          // car le container width augmente, mais les px des pins sont fixes.
-          // Si on veut une taille constante VISUELLE RELATIVE A L'ECRAN : scale(1) suffit.
-          // Si on veut compenser un scale parent (qui n'existe pas ici sur container, c'est width),
-          // l'ancien code était probablement erroné ou prévu pour transform:scale du parent.
-          // On fixe à scale(1) par sécurité ou on laisse l'ancien comportement si souhaité.)
-          pin.style.transform = `translate(-50%, -50%) scale(1)`;
-        }
-      });
+      if (translateX > 0) translateX = 0;
+      if (translateX < -maxOffsetX) translateX = -maxOffsetX;
+      if (translateY > 0) translateY = 0;
+      if (translateY < -maxOffsetY) translateY = -maxOffsetY;
     };
 
-    const handleZoom = (e, direction) => {
-      // Stop tout conflit
+    const applyTransform = () => {
+      clampState();
+      imageMap.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+    };
+
+    const zoomAroundPoint = (clientX, clientY, deltaScale) => {
+      const rect = mapViewport.getBoundingClientRect();
+      const relativeX = clientX - rect.left;
+      const relativeY = clientY - rect.top;
+      const contentX = (relativeX - translateX) / currentScale;
+      const contentY = (relativeY - translateY) / currentScale;
+
+      currentScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, currentScale + deltaScale));
+      translateX = relativeX - contentX * currentScale;
+      translateY = relativeY - contentY * currentScale;
+      applyTransform();
+    };
+
+    const handleZoomButton = (e, direction) => {
       e.preventDefault();
       e.stopPropagation();
       if (e.stopImmediatePropagation) e.stopImmediatePropagation();
 
-      if (direction === 'in') currentScale += 0.5;
-      else currentScale -= 0.5;
-
-      applyScale();
+      const rect = mapViewport.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const delta = direction === "in" ? 0.5 : -0.5;
+      zoomAroundPoint(centerX, centerY, delta);
     };
 
     // Utilisation de onclick pour écraser tout conflit précédent
-    btnIn.onclick = (e) => handleZoom(e, 'in');
-    btnOut.onclick = (e) => handleZoom(e, 'out');
+    btnIn.onclick = (e) => handleZoomButton(e, 'in');
+    btnOut.onclick = (e) => handleZoomButton(e, 'out');
 
     // Support touch pour mobile
-    btnIn.ontouchstart = (e) => handleZoom(e, 'in');
-    btnOut.ontouchstart = (e) => handleZoom(e, 'out');
+    btnIn.ontouchstart = (e) => handleZoomButton(e, 'in');
+    btnOut.ontouchstart = (e) => handleZoomButton(e, 'out');
+
+    // --- GESTION DU PINCH-TO-ZOOM ---
+    const gestureTarget = mapViewport;
+    let startDist = 0;
+    let startScale = 1;
+    let pinchAnchor = null;
+    let panStart = null;
+
+    const distanceBetweenTouches = (touchList) => {
+      const dx = touchList[0].clientX - touchList[1].clientX;
+      const dy = touchList[0].clientY - touchList[1].clientY;
+      return Math.hypot(dx, dy);
+    };
+
+    const midpointBetweenTouches = (touchList) => ({
+      x: (touchList[0].clientX + touchList[1].clientX) / 2,
+      y: (touchList[0].clientY + touchList[1].clientY) / 2,
+    });
+
+    // Détection début pincement ou pan
+    gestureTarget.addEventListener("touchstart", (e) => {
+      if (e.touches.length === 2) {
+        if (e.cancelable) e.preventDefault();
+        startDist = distanceBetweenTouches(e.touches);
+        startScale = currentScale;
+        const rect = mapViewport.getBoundingClientRect();
+        const mid = midpointBetweenTouches(e.touches);
+        const relativeX = mid.x - rect.left;
+        const relativeY = mid.y - rect.top;
+        pinchAnchor = {
+          x: (relativeX - translateX) / currentScale,
+          y: (relativeY - translateY) / currentScale,
+        };
+        panStart = null; // On désactive le pan pendant le pinch
+      } else if (e.touches.length === 1 && currentScale > 1) {
+        panStart = {
+          x: e.touches[0].clientX,
+          y: e.touches[0].clientY,
+        };
+      }
+    }, { passive: false });
+
+    // Gestion du mouvement (pinch ou pan)
+    gestureTarget.addEventListener("touchmove", (e) => {
+      if (e.touches.length === 2 && startDist > 0) {
+        if (e.cancelable) e.preventDefault();
+        const newDist = distanceBetweenTouches(e.touches);
+        let targetScale = (newDist / startDist) * startScale;
+        if (targetScale < MIN_SCALE) targetScale = MIN_SCALE;
+        if (targetScale > MAX_SCALE) targetScale = MAX_SCALE;
+
+        currentScale = targetScale;
+
+        const rect = mapViewport.getBoundingClientRect();
+        const mid = midpointBetweenTouches(e.touches);
+        const relativeX = mid.x - rect.left;
+        const relativeY = mid.y - rect.top;
+
+        if (pinchAnchor) {
+          translateX = relativeX - pinchAnchor.x * currentScale;
+          translateY = relativeY - pinchAnchor.y * currentScale;
+        }
+
+        applyTransform();
+      } else if (e.touches.length === 1 && panStart && currentScale > 1) {
+        if (e.cancelable) e.preventDefault();
+        const touch = e.touches[0];
+        const dx = touch.clientX - panStart.x;
+        const dy = touch.clientY - panStart.y;
+        translateX += dx;
+        translateY += dy;
+        panStart = { x: touch.clientX, y: touch.clientY };
+        applyTransform();
+      }
+    }, { passive: false });
+
+    // Fin des gestes tactiles
+    gestureTarget.addEventListener("touchend", (e) => {
+      if (e.touches.length < 2) {
+        startDist = 0;
+        pinchAnchor = null;
+      }
+      if (e.touches.length === 1 && currentScale > 1) {
+        panStart = {
+          x: e.touches[0].clientX,
+          y: e.touches[0].clientY,
+        };
+      } else if (e.touches.length === 0) {
+        panStart = null;
+      }
+    });
+
+    gestureTarget.addEventListener("touchcancel", () => {
+      startDist = 0;
+      pinchAnchor = null;
+      panStart = null;
+    });
+
+    // Initialisation visuelle
+    applyTransform();
+
+    // Reset lors des changements de taille d'écran
+    window.addEventListener("resize", () => {
+      currentScale = 1;
+      translateX = 0;
+      translateY = 0;
+      applyTransform();
+    });
   }
 
   // Le délai assure que le DOM est bien stabilisé
