@@ -845,23 +845,66 @@ const citiesData = [
     population: 107229,
     interco: "Caen la Mer",
     mayor: "Aristide Olivier (DVD)",
-    mayorColor: "#0066CC", // Successeur Bruneau (DVD/LR)
+    mayorColor: "#adc1fd", // Successeur Bruneau (DVD/LR)
     candidates: [
       {
         name: "Aristide Olivier",
-        party: "Majorité mun.",
+        party: "DVD - PRV",
         isMayor: true,
-        color: "#0066CC",
+        color: "#adc1fd",
         score: "",
-        slogan: "",
+        slogan: "Caen passionnément !",
+      },
+      {
+        name: "Rudy L'Orphelin",
+        party: "LÉ - PS - PCF - L'A - D! - PP",
+        color: "#00c000",
+        score: "",
+        slogan: "Caen la ville nous rassemble",
       },
       {
         name: "Aurélien Guidi",
-        party: "Union Gauche?",
-        color: "#FF3333",
+        party: "LFI - G.s",
+        color: "#cc2443",
         score: "",
-        slogan: "",
+        slogan: "Faire mieux pour Caen",
       },
+      {
+        name: "Chantal Henry",
+        party: "RN - UDR",
+        color: "#0d378a",
+        score: "",
+        slogan: "Le 15 mars rassemblons Caen",
+      },
+      {
+        name: "Thomas Chevalier",
+        party: "DVC - ÉAC - U - AC - GA",
+        color: "#ffd76e",
+        score: "",
+        slogan: "Caen dynamique !",
+      },
+      {
+        name: "Antoine Casini",
+        party: "DVG - PRG - EQX - L'E",
+        color: "#ffc0c0",
+        score: "",
+        slogan: "Les Engagés",
+      },
+      {
+        name: "Xavier Le Coutour",
+        party: "CàC",
+        color: "#ffc0c0",
+        score: "",
+        slogan: "Citoyens à Caen",
+      },
+      {
+        name: "Pierre Casevitz",
+        party: "LO",
+        color: "#bb0000",
+        score: "",
+        slogan: "Lutte ouvrière - Faire entendre le camp des travailleurs",
+      },
+
     ],
     polls: [],
     results2020: {
@@ -873,7 +916,14 @@ const citiesData = [
     results2026: {
       tour1: [
         { candidate: "Aristide Olivier", party: "DVD", score: "" },
-        { candidate: "Aurélien Guidi", party: "Union Gauche?", score: "" },
+        { candidate: "Rudy L'Orphelin",bparty: "LÉ - PS - PCF - L'A - D! - PP", score: ""},
+        { candidate: "Aurélien Guidi", party: "LFI - G.s", score: "" },
+        { candidate: "Chantal Henry", party: "RN - UDR", score: "" },
+        { candidate: "Thomas Chevalier", party: "DVC - ÉAC - U - AC - GA", score: "" },
+        { candidate: "Antoine Casini", party: "DVG - PRG - EQX - L'E", score: "" },
+        { candidate: "Xavier Le Coutour", party: "CàC", score: "" },
+        { candidate: "Pierre Casevitz", party: "LO", score: "" },
+  
       ],
       tour2: [],
     },
@@ -1160,14 +1210,21 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Laurence Ruffin", party: "DVG - LÉ - PS - PCF - G·s - PA - L'A - LFI diss. - ADES - RC", score: "" },
+        {
+          candidate: "Laurence Ruffin",
+          party: "DVG - LÉ - PS - PCF - G·s - PA - L'A - LFI diss. - ADES - RC",
+          score: "",
+        },
         { candidate: "Alain Carignon", party: "Société Civile/LR", score: "" },
         { candidate: "Allan Brunon", party: "LFI", score: "" },
         { candidate: "Romain Gentil", party: "PP - PRG - EQX", score: "" },
         { candidate: "Valentin Gabriac", party: "RN", score: "" },
-        { candidate: "Pierre-Edouard Cardinal", party: "RE - MoDem", score: "" },
+        {
+          candidate: "Pierre-Edouard Cardinal",
+          party: "RE - MoDem",
+          score: "",
+        },
         { candidate: "Hervé Gerbi", party: "HOR", score: "" },
-
       ],
       tour2: [],
     },
@@ -1372,7 +1429,11 @@ const citiesData = [
         { candidate: "Jean-Paul Lecoq", party: "PCF", score: "" },
         { candidate: "Franck Keller", party: "RN - UDR", score: "" },
         { candidate: "Charlotte Boulogne", party: "LFI", score: "" },
-        { candidate: "Sophie Zarifian", party: "PCF - PS - LÉ - G.s - PP - L'AP", score: "" },
+        {
+          candidate: "Sophie Zarifian",
+          party: "PCF - PS - LÉ - G.s - PP - L'AP",
+          score: "",
+        },
       ],
       tour2: [],
     },
@@ -1383,15 +1444,43 @@ const citiesData = [
     population: 143847,
     interco: "Le Mans Métropole",
     mayor: "Stéphane Le Foll (PS)",
-    mayorColor: "#FF3333",
+    mayorColor: "#ff8080", // PS
     candidates: [
       {
         name: "Stéphane Le Foll",
-        party: "PS",
+        party: "PS - PP - PRG",
         isMayor: true,
-        color: "#FF3333",
+        color: "#ff8080",
         score: "",
-        slogan: "",
+        slogan: "Le Mans nous rassemble",
+      },
+      {
+        name: "Marietta Karamanli",
+        party: "L'Union pour Le Mans",
+        color: "#ffc0c0",
+        score: "",
+        slogan: "Le Mans nous rassemble",
+      },
+      {
+        name: "Olivier Sasso",
+        party: "LR - UDI - HOR",
+        color: "#0066cc",
+        score: "",
+        slogan: "Nouveau cap",
+      },
+      {
+        name: "Maël Brillant",
+        party: "LFI",
+        color: "#cc2443",
+        score: "",
+        slogan: "Le Mans ville humaine",
+      },
+      {
+        name: "Victoria de Vigneral",
+        party: "RN",
+        color: "#0d378a",
+        score: "",
+        slogan: "Rassemblement pour Le Mans",
       },
     ],
     polls: [],
@@ -1408,7 +1497,10 @@ const citiesData = [
     results2026: {
       tour1: [
         { candidate: "Stéphane Le Foll", party: "PS", score: "" },
-        { candidate: "M. Marietta-Otille", party: "EELV", score: "" },
+        { candidate: "Marietta Karamanli", party: "L'Union pour Le Mans", score: "" },
+        { candidate: "Olivier Sasso", party: "LR - UDI - HOR", score: "" },
+        { candidate: "Maël Brillant", party: "LFI", score: "" },
+        { candidate: "Victoria de Vigneral", party: "RN", score: "" },
       ],
       tour2: [],
     },
@@ -3348,7 +3440,6 @@ function latLonToPercent(lat, lon) {
 
 // --- 2. INITIALISATION (image map) ---
 document.addEventListener("DOMContentLoaded", () => {
-
   // --- Initialisation du Zoom (Correction) ---
   function initZoom() {
     const btnIn = document.getElementById("btn-zoom-in");
@@ -3401,7 +3492,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const contentX = (relativeX - translateX) / currentScale;
       const contentY = (relativeY - translateY) / currentScale;
 
-      currentScale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, currentScale + deltaScale));
+      currentScale = Math.min(
+        MAX_SCALE,
+        Math.max(MIN_SCALE, currentScale + deltaScale),
+      );
       translateX = relativeX - contentX * currentScale;
       translateY = relativeY - contentY * currentScale;
       applyTransform();
@@ -3420,12 +3514,12 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Utilisation de onclick pour écraser tout conflit précédent
-    btnIn.onclick = (e) => handleZoomButton(e, 'in');
-    btnOut.onclick = (e) => handleZoomButton(e, 'out');
+    btnIn.onclick = (e) => handleZoomButton(e, "in");
+    btnOut.onclick = (e) => handleZoomButton(e, "out");
 
     // Support touch pour mobile
-    btnIn.ontouchstart = (e) => handleZoomButton(e, 'in');
-    btnOut.ontouchstart = (e) => handleZoomButton(e, 'out');
+    btnIn.ontouchstart = (e) => handleZoomButton(e, "in");
+    btnOut.ontouchstart = (e) => handleZoomButton(e, "out");
 
     // --- GESTION DU PINCH-TO-ZOOM ---
     const gestureTarget = mapViewport;
@@ -3446,61 +3540,69 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Détection début pincement ou pan
-    gestureTarget.addEventListener("touchstart", (e) => {
-      if (e.touches.length === 2) {
-        if (e.cancelable) e.preventDefault();
-        startDist = distanceBetweenTouches(e.touches);
-        startScale = currentScale;
-        const rect = mapViewport.getBoundingClientRect();
-        const mid = midpointBetweenTouches(e.touches);
-        const relativeX = mid.x - rect.left;
-        const relativeY = mid.y - rect.top;
-        pinchAnchor = {
-          x: (relativeX - translateX) / currentScale,
-          y: (relativeY - translateY) / currentScale,
-        };
-        panStart = null; // On désactive le pan pendant le pinch
-      } else if (e.touches.length === 1 && currentScale > 1) {
-        panStart = {
-          x: e.touches[0].clientX,
-          y: e.touches[0].clientY,
-        };
-      }
-    }, { passive: false });
+    gestureTarget.addEventListener(
+      "touchstart",
+      (e) => {
+        if (e.touches.length === 2) {
+          if (e.cancelable) e.preventDefault();
+          startDist = distanceBetweenTouches(e.touches);
+          startScale = currentScale;
+          const rect = mapViewport.getBoundingClientRect();
+          const mid = midpointBetweenTouches(e.touches);
+          const relativeX = mid.x - rect.left;
+          const relativeY = mid.y - rect.top;
+          pinchAnchor = {
+            x: (relativeX - translateX) / currentScale,
+            y: (relativeY - translateY) / currentScale,
+          };
+          panStart = null; // On désactive le pan pendant le pinch
+        } else if (e.touches.length === 1 && currentScale > 1) {
+          panStart = {
+            x: e.touches[0].clientX,
+            y: e.touches[0].clientY,
+          };
+        }
+      },
+      { passive: false },
+    );
 
     // Gestion du mouvement (pinch ou pan)
-    gestureTarget.addEventListener("touchmove", (e) => {
-      if (e.touches.length === 2 && startDist > 0) {
-        if (e.cancelable) e.preventDefault();
-        const newDist = distanceBetweenTouches(e.touches);
-        let targetScale = (newDist / startDist) * startScale;
-        if (targetScale < MIN_SCALE) targetScale = MIN_SCALE;
-        if (targetScale > MAX_SCALE) targetScale = MAX_SCALE;
+    gestureTarget.addEventListener(
+      "touchmove",
+      (e) => {
+        if (e.touches.length === 2 && startDist > 0) {
+          if (e.cancelable) e.preventDefault();
+          const newDist = distanceBetweenTouches(e.touches);
+          let targetScale = (newDist / startDist) * startScale;
+          if (targetScale < MIN_SCALE) targetScale = MIN_SCALE;
+          if (targetScale > MAX_SCALE) targetScale = MAX_SCALE;
 
-        currentScale = targetScale;
+          currentScale = targetScale;
 
-        const rect = mapViewport.getBoundingClientRect();
-        const mid = midpointBetweenTouches(e.touches);
-        const relativeX = mid.x - rect.left;
-        const relativeY = mid.y - rect.top;
+          const rect = mapViewport.getBoundingClientRect();
+          const mid = midpointBetweenTouches(e.touches);
+          const relativeX = mid.x - rect.left;
+          const relativeY = mid.y - rect.top;
 
-        if (pinchAnchor) {
-          translateX = relativeX - pinchAnchor.x * currentScale;
-          translateY = relativeY - pinchAnchor.y * currentScale;
+          if (pinchAnchor) {
+            translateX = relativeX - pinchAnchor.x * currentScale;
+            translateY = relativeY - pinchAnchor.y * currentScale;
+          }
+
+          applyTransform();
+        } else if (e.touches.length === 1 && panStart && currentScale > 1) {
+          if (e.cancelable) e.preventDefault();
+          const touch = e.touches[0];
+          const dx = touch.clientX - panStart.x;
+          const dy = touch.clientY - panStart.y;
+          translateX += dx;
+          translateY += dy;
+          panStart = { x: touch.clientX, y: touch.clientY };
+          applyTransform();
         }
-
-        applyTransform();
-      } else if (e.touches.length === 1 && panStart && currentScale > 1) {
-        if (e.cancelable) e.preventDefault();
-        const touch = e.touches[0];
-        const dx = touch.clientX - panStart.x;
-        const dy = touch.clientY - panStart.y;
-        translateX += dx;
-        translateY += dy;
-        panStart = { x: touch.clientX, y: touch.clientY };
-        applyTransform();
-      }
-    }, { passive: false });
+      },
+      { passive: false },
+    );
 
     // Fin des gestes tactiles
     gestureTarget.addEventListener("touchend", (e) => {
@@ -3551,10 +3653,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let idx = 0;
     try {
       mapImg.crossOrigin = "anonymous";
-    } catch (e) { }
+    } catch (e) {}
     try {
       mapImg.referrerPolicy = "no-referrer";
-    } catch (e) { }
+    } catch (e) {}
 
     // overlay fallback (créé une seule fois si besoin)
     let fallbackOverlay = null;
@@ -4140,7 +4242,7 @@ window.showCityDetails = function (cityName) {
     if (city.interco) {
       let intercoText = city.interco;
       const lowerInterco = intercoText.toLowerCase();
-      // Ajout du type si non précisé. 
+      // Ajout du type si non précisé.
       // On détecte si le nom contient déjà "communauté", "métropole" ou "agglomération".
       // Sinon, on préfixe par "Communauté d'agglomération : ".
       if (
@@ -4623,7 +4725,7 @@ window.setCandidateStatus = function (cityName, candidateName, statusKey) {
     const detailName = document.getElementById("detail-city-name");
     if (detailName && detailName.innerText.includes(cityName))
       showCityDetails(cityName);
-  } catch (e) { }
+  } catch (e) {}
   return true;
 };
 

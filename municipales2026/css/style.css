@@ -79,8 +79,13 @@ h1 {
 /* --- CONTAINER PRINCIPAL --- */
 .container {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 80px auto;
   padding: 0 15px;
+}
+
+/* Force un espacement supplémentaire juste après le header (sélecteur spécifique) */
+header + .container {
+  margin-top: 80px;
 }
 
 /* --- HERO BANNER (ACCUEIL) --- */
@@ -156,15 +161,14 @@ h1 {
   max-width: 100%; /* Sécurité supplémentaire */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 0;
-  
+
   /* Le zoom est géré par transform, on masque donc les débordements */
   overflow: hidden;
   
   /* Margin top réduite */
-  margin-top: 20px;
+  margin-top: 70px;
   position: relative; 
-  background-color: #ffffff; /* Couleur mer par défaut en fond */
+  background-color: #f8f8f8; /* Couleur mer par défaut en fond */
 }
 
 /* Conteneur image-map */
@@ -217,7 +221,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10; /* Niveau de base */
+  z-index: 2; /* Niveau de base */
 }
 
 .pin:hover {
@@ -666,8 +670,9 @@ tr:hover td {
 /* Ajustements pour la carte et la section détails */
 #map {
   /* ...existing code... */
-  z-index: 0;
+  z-index: auto;
   overflow: visible; /* Permet aux pins du haut de dépasser (modifié pour villes du nord) */
+  margin-top: 70px !important; /* Espace au-dessus de la carte */
   position: relative; /* Pour le contexte */
   width: 100%;
   /* max-height constraint removed so the map is fully visible on desktop */
