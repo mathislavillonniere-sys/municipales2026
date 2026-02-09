@@ -2864,8 +2864,7 @@ const citiesData = [
     polls: [],
     results2020: {
       tour1: [
-        { candidate: "N. Mayer-Rossignol", party: "PS", score: "29,51%" },
-        { candidate: "J.M. Bérégovoy", party: "EELV", score: "23,13%" },
+        { candidate: "Guillaume Delbar", party: "DVC", score : "41,22%" },
         { candidate: "J.F. Bures", party: "DVD", score: "10,16%" },
       ],
       tour2: [
