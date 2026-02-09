@@ -904,7 +904,6 @@ const citiesData = [
         score: "",
         slogan: "Lutte ouvrière - Faire entendre le camp des travailleurs",
       },
-
     ],
     polls: [],
     results2020: {
@@ -916,14 +915,25 @@ const citiesData = [
     results2026: {
       tour1: [
         { candidate: "Aristide Olivier", party: "DVD", score: "" },
-        { candidate: "Rudy L'Orphelin",bparty: "LÉ - PS - PCF - L'A - D! - PP", score: ""},
+        {
+          candidate: "Rudy L'Orphelin",
+          bparty: "LÉ - PS - PCF - L'A - D! - PP",
+          score: "",
+        },
         { candidate: "Aurélien Guidi", party: "LFI - G.s", score: "" },
         { candidate: "Chantal Henry", party: "RN - UDR", score: "" },
-        { candidate: "Thomas Chevalier", party: "DVC - ÉAC - U - AC - GA", score: "" },
-        { candidate: "Antoine Casini", party: "DVG - PRG - EQX - L'E", score: "" },
+        {
+          candidate: "Thomas Chevalier",
+          party: "DVC - ÉAC - U - AC - GA",
+          score: "",
+        },
+        {
+          candidate: "Antoine Casini",
+          party: "DVG - PRG - EQX - L'E",
+          score: "",
+        },
         { candidate: "Xavier Le Coutour", party: "CàC", score: "" },
         { candidate: "Pierre Casevitz", party: "LO", score: "" },
-  
       ],
       tour2: [],
     },
@@ -1497,7 +1507,11 @@ const citiesData = [
     results2026: {
       tour1: [
         { candidate: "Stéphane Le Foll", party: "PS", score: "" },
-        { candidate: "Marietta Karamanli", party: "L'Union pour Le Mans", score: "" },
+        {
+          candidate: "Marietta Karamanli",
+          party: "L'Union pour Le Mans",
+          score: "",
+        },
         { candidate: "Olivier Sasso", party: "LR - UDI - HOR", score: "" },
         { candidate: "Maël Brillant", party: "LFI", score: "" },
         { candidate: "Victoria de Vigneral", party: "RN", score: "" },
@@ -2864,12 +2878,20 @@ const citiesData = [
     polls: [],
     results2020: {
       tour1: [
-        { candidate: "Guillaume Delbar", party: "DVC", score : "41,22%" },
-        { candidate: "J.F. Bures", party: "DVD", score: "10,16%" },
+        { candidate: "Guillaume Delbar", party: "DVC", score: "41,22%" },
+        {
+          candidate: "Karim Amrouni",
+          party: "DVG-PS dissident",
+          score: "14,79%",
+        },
       ],
       tour2: [
-        { candidate: "N. Mayer-Rossignol", party: "PS", score: "67,12%" },
-        { candidate: "J.F. Bures", party: "DVD", score: "32,88%" },
+        { candidate: "Guillaume Delbar", party: "DVC", score: "56,20%" },
+        {
+          candidate: "Karim Amrouni",
+          party: "DVG-PS dissident",
+          score: "43,79%",
+        },
       ],
     },
   },
@@ -3029,12 +3051,19 @@ const citiesData = [
     mayorColor: "#00C000", // EELV
     candidates: [
       {
+        name: "Catherine Trautmann",
+        party: "PS",
+        color: "#ff8080",
+        score: "31%",
+        slogan: "Pour Strasbourg",
+      },
+      {
         name: "Jeanne Barseghian",
         party: "Les Écologistes",
         isMayor: true,
         color: "#00C000",
-        score: "35%",
-        slogan: "",
+        score: "22%",
+        slogan: "Strasbourg juste et vivante",
       },
       {
         name: "Alain Fontanel",
@@ -3154,28 +3183,63 @@ const citiesData = [
         party: "Aimer Toulouse (DVD)",
         isMayor: true,
         color: "#0066CC",
-        score: "33%",
+        score: "34%",
         slogan: "",
       },
       {
         name: "François Briançon",
         party: "PS - LÉ - PCF - G.s - PP - PRG - ND - MRC - AC",
         color: "#FF3333",
-        score: "30%",
-        slogan: "",
+        score: "32%",
+        slogan: "La Gauche unie pour Toulouse",
       },
       {
         name: "François Piquemal",
         party: "LFI - LÉ diss. - NPA-A - AC diss.",
         color: "#cc2443",
-        score: "23%",
-        slogan: "",
+        score: "19%",
+        slogan: "Demain Toulouse à gauche et écologiste",
       },
       {
         name: "Julien Leonardelli",
         party: "RN",
         color: "#0D378A",
-        score: "10%",
+        score: "8%",
+        slogan: "",
+      },
+      {
+        name: "Arthur Cottrel",
+        party: "REC",
+        color: "#13151d",
+        score: "4%",
+        slogan: "J’aime Toulouse",
+      },
+      {
+        name: "Nadia Pellefigue",
+        party: "DVG",
+        color: "#ffc0c0",
+        score: "Non testé",
+        slogan: "",
+      },
+      {
+        name: "à déterminer",
+        party: "EQX",
+        color: "#77ff77",
+        score: "1%",
+        slogan: "",
+      },
+      {
+        name: "Guillaume Scali",
+        party: "NPA",
+        color: "#bb0000",
+        score: "1%",
+        slogan: "Toulouse ouvrière & révolutionnaire",
+      },
+      {
+        name: "Pierre Pezzin",
+        party: "DIV",
+        color: "#cccccc",
+        score: "0,5%",
         slogan: "",
       },
     ],
@@ -3215,6 +3279,78 @@ const citiesData = [
           score: "",
         },
         { candidate: "Julien Leonardelli", party: "RN", score: "" },
+      ],
+      tour2: [],
+    },
+  },
+  {
+    name: "Tourcoing",
+    coords: [50.7125, 3.2516],
+    population: 99160,
+    interco: "métropole européenne de Lille",
+    mayor: "Doriane Bécue (DVD)",
+    mayorColor: "#adc1fd", // EELV
+    candidates: [
+      {
+        name: "Doriane Bécue",
+        party: "Divers Droite",
+        isMayor: true,
+        color: "#adc1fd",
+        score: "53%",
+        slogan: "",
+      },
+      {
+        name: "Katy Vuylsteker",
+        party: "LÉ - PS - PCF",
+        color: "#00c000",
+        score: "15%",
+        slogan: "Nous, Tourcoing",
+      },
+      {
+        name: "Franck Talpaert",
+        party: "DVG",
+        color: "#ffc0c0",
+        score: "15%",
+        slogan: "Citoyen.nes pour Tourcoing",
+      },
+      {
+        name: "Bastien Verbrugghe",
+        party: "RN",
+        color: "#0d378a",
+        score: "15%",
+        slogan: "Pour Tourcoing",
+      },
+      {
+        name: "Émilie Croës",
+        party: "LFI",
+        color: "#cc2443",
+        score: "9%",
+        slogan: "Tourcoing insoumise",
+      },
+    ],
+    polls: [
+      {
+        source: "IFOP (Juin 2025)",
+        url: "https://www.commission-des-sondages.fr/notices/files/notices/2025/juin/9958-mun-tourcoing-ifop-voix-du-nord-23-juin.pdf",
+        details: "",
+      },
+    ],
+    results2020: {
+      tour1: [
+        { candidate: "Gérald Darmanin", party: "LREM", score: "60,88%" },
+        { candidate: "Franck Talpaert", party: "DVG", score: "10,77%" },
+        { candidate: "Katy Vuylsteker", party: "PS", score: "9,20%" },
+        { candidate: "Rémi Meurin", party: "RN", score: "8,39%" },
+      ],
+    },
+    results2026: {
+      tour1: [
+        { candidate: "Doriane Bécue", party: "Divers Droite", score: ""},
+        { candidate: "Katy Vuylsteker", party: "LÉ - PS - PCF", score: "" },
+        { candidate: "Franck Talpaert", party: "DVG", score: "" },
+        { candidate: "Bastien Verbrugghe", party: "RN", score: "" },
+        { candidate: "Émilie Croës", party: "LFI", score: "" },
+       
       ],
       tour2: [],
     },
