@@ -4,13 +4,15 @@
   const companyInfo = "Travail indépendant";
 
   // Détection basique du contexte (racine vs sous-dossier /html/)
-  const isHtmlSubDir = window.location.pathname.includes('/html/') || window.location.pathname.includes('\\html\\');
+  const isHtmlSubDir =
+    window.location.pathname.includes("/html/") ||
+    window.location.pathname.includes("\\html\\");
 
   // Préfixe pour les liens statiques HTML (Mentions, Méthodologie)
-  const linkPrefix = isHtmlSubDir ? '' : 'municipales2026/html/';
+  const linkPrefix = isHtmlSubDir ? "" : "municipales2026/html/";
 
   // Préfixe pour le retour à l'accueil
-  const indexPrefix = isHtmlSubDir ? '../../index.html' : '';
+  const indexPrefix = isHtmlSubDir ? "../../index.html" : "";
 
   const legalHref = linkPrefix + "mentions-legales.html";
   const methodHref = linkPrefix + "sondages-methodologie.html";
@@ -21,7 +23,7 @@
 
     // Helper pour générer les boutons de nav
     const makeNav = (label, section) => {
-      const href = isHtmlSubDir ? `${indexPrefix}#${section}` : '#';
+      const href = isHtmlSubDir ? `${indexPrefix}#${section}` : "#";
       return `<a href="${href}" class="nav-btn" data-section="${section}">${label}</a>`;
     };
 
@@ -35,11 +37,11 @@
         <div class="footer-col footer-center">
           <!-- Menu répliqué dans le footer -->
           <nav class="footer-nav" role="navigation" aria-label="Navigation site">
-            ${makeNav('Accueil', 'accueil')}
-            ${makeNav('Carte', 'map-section')}
-            ${makeNav('Villes', 'villes')}
-            ${makeNav('Partis', 'partis')}
-            ${makeNav('Sondages', 'sondages')}
+            ${makeNav("Accueil", "accueil")}
+            ${makeNav("Carte", "map-section")}
+            ${makeNav("Villes", "villes")}
+            ${makeNav("Partis", "partis")}
+            ${makeNav("Sondages", "sondages")}
           </nav>
           
         </div>
@@ -61,7 +63,7 @@
 
   // Fonction pour récupérer la date de dernière modification parmi plusieurs fichiers
   async function updateLastModified() {
-    const output = document.getElementById('last-update');
+    const output = document.getElementById("last-update");
     if (!output) return;
 
     // Liste des fichiers à surveiller pour la date
@@ -69,57 +71,62 @@
     // Réutilisation de isHtmlSubDir (déclaré en haut, scope global du module)
     // Mais isHtmlSubDir est dans la closure du haut, il faut le rendre accessible ou le recalculer.
     // Comme tout est dans (function(){ ... })(), la variable est accessible.
-    const pathIsHtml = window.location.pathname.includes('/html/') || window.location.pathname.includes('\\html\\');
+    const pathIsHtml =
+      window.location.pathname.includes("/html/") ||
+      window.location.pathname.includes("\\html\\");
 
     if (pathIsHtml) {
       files = [
         window.location.href,
-        '../app.js',
-        '../css/style.css',
-        '../js/footer.js'
+        "../app.js",
+        "../css/style.css",
+        "../js/footer.js",
       ];
     } else {
       files = [
         window.location.href,
-        'municipales2026/app.js',
-        'municipales2026/css/style.css',
-        'municipales2026/js/footer.js'
+        "municipales2026/app.js",
+        "municipales2026/css/style.css",
+        "municipales2026/js/footer.js",
       ];
     }
 
     let latestDate = new Date(document.lastModified); // Par défaut : date du HTML
 
     // Si on est en HTTP/HTTPS (Live Server), on peut vérifier les dates des fichiers liés
-    if (window.location.protocol.startsWith('http')) {
+    if (window.location.protocol.startsWith("http")) {
       try {
-        const checks = files.map(file =>
-          fetch(file, { method: 'HEAD', cache: 'no-cache' })
-            .then(res => {
-              const lastMod = res.headers.get('Last-Modified');
+        const checks = files.map((file) =>
+          fetch(file, { method: "HEAD", cache: "no-cache" })
+            .then((res) => {
+              const lastMod = res.headers.get("Last-Modified");
               return lastMod ? new Date(lastMod) : null;
             })
-            .catch(() => null)
+            .catch(() => null),
         );
 
         const results = await Promise.all(checks);
-        results.forEach(date => {
+        results.forEach((date) => {
           if (date && date > latestDate) {
             latestDate = date;
           }
         });
       } catch (e) {
-        console.warn("Impossible de récupérer les dates précises (mode local ou erreur)", e);
+        console.warn(
+          "Impossible de récupérer les dates précises (mode local ou erreur)",
+          e,
+        );
       }
     }
 
     // Formatage de la date : JJ/MM/AAAA HH:mm:ss
-    const formatted = latestDate.toLocaleString('fr-FR', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
+    const formatted = latestDate.toLocaleString("fr-FR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
     });
 
     output.textContent = `Dernière actualisation : ${formatted}`;
@@ -134,7 +141,8 @@
 
     if (!placeholder) {
       const container = document.querySelector(".container");
-      if (container && container.parentNode) container.parentNode.appendChild(footerEl);
+      if (container && container.parentNode)
+        container.parentNode.appendChild(footerEl);
       else document.body.appendChild(footerEl);
     } else {
       placeholder.replaceWith(footerEl);
@@ -145,10 +153,10 @@
 
     // --- Wiring : synchroniser les clics du footer-nav avec l'affichage des sections ---
     try {
-      const footerBtns = footerEl.querySelectorAll('.footer-nav .nav-btn');
-      footerBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          const target = btn.getAttribute('data-section');
+      const footerBtns = footerEl.querySelectorAll(".footer-nav .nav-btn");
+      footerBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const target = btn.getAttribute("data-section");
           if (!target) return;
 
           // On vérifie si la section existe sur cette page (SPA behavior)
@@ -156,30 +164,38 @@
           if (section) {
             e.preventDefault();
             // Retire active partout (header + footer)
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document
+              .querySelectorAll(".nav-btn")
+              .forEach((b) => b.classList.remove("active"));
 
             // Active le bouton header correspondant (s'il existe) + celui du footer
-            const headerBtn = document.querySelector(`.main-nav .nav-btn[data-section="${target}"]`);
-            if (headerBtn) headerBtn.classList.add('active');
-            btn.classList.add('active');
+            const headerBtn = document.querySelector(
+              `.main-nav .nav-btn[data-section="${target}"]`,
+            );
+            if (headerBtn) headerBtn.classList.add("active");
+            btn.classList.add("active");
 
             // Affiche la section
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            section.classList.add('active');
+            document
+              .querySelectorAll(".section")
+              .forEach((s) => s.classList.remove("active"));
+            section.classList.add("active");
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }
         });
       });
 
       // Optionnel : si une section est active au chargement, refléter dans le footer
-      const current = document.querySelector('.section.active');
+      const current = document.querySelector(".section.active");
       if (current) {
         const id = current.id;
-        const fbtn = footerEl.querySelector(`.footer-nav .nav-btn[data-section="${id}"]`);
-        if (fbtn) fbtn.classList.add('active');
+        const fbtn = footerEl.querySelector(
+          `.footer-nav .nav-btn[data-section="${id}"]`,
+        );
+        if (fbtn) fbtn.classList.add("active");
       }
-    } catch (e) { }
+    } catch (e) {}
   }
 
   // Insérer après DOM ready
