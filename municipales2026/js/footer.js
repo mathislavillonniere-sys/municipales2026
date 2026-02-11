@@ -46,7 +46,8 @@
 
         <div class="footer-col footer-right">
           <p>${companyInfo}</p>
-          <p>Conforme RGPD — Vos données sont protégées  <a href="${legalHref}">Mentions légales</a></p>
+          <p>Conforme RGPD — Vos données sont protégées  
+          <a href="${legalHref}">Mentions légales</a></p>
           <p><a href="${methodHref}">Méthodologie détaillée des sondages</a></p>
           <p><a href="${sourcesHref}">Sources des données</a></p>
         </div>
