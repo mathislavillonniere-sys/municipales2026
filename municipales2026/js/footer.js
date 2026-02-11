@@ -14,6 +14,7 @@
 
   const legalHref = linkPrefix + "mentions-legales.html";
   const methodHref = linkPrefix + "sondages-methodologie.html";
+  const sourcesHref = linkPrefix + "sources.html";
 
   function buildFooterHTML() {
     const year = new Date().getFullYear();
@@ -47,6 +48,7 @@
           <p>${companyInfo}</p>
           <p>Conforme RGPD — Vos données sont protégées  <a href="${legalHref}">Mentions légales</a></p>
           <p><a href="${methodHref}">Méthodologie détaillée des sondages</a></p>
+          <p><a href="${sourcesHref}">Sources des données</a></p>
         </div>
       </div>
       <div class="footer-bottom">
