@@ -10,13 +10,12 @@
   --text-color: #1f2937;
 }
 
- 
-html, body {
+html,
+body {
   /* Empêche le défilement horizontal global causé par des éléments trop larges */
   overflow-x: hidden;
   width: 100%;
   position: relative;
- 
 }
 
 body {
@@ -164,10 +163,10 @@ header + .container {
 
   /* Le zoom est géré par transform, on masque donc les débordements */
   overflow: hidden;
-  
+
   /* Margin top réduite */
   margin-top: 70px;
-  position: relative; 
+  position: relative;
   background-color: #f8f8f8; /* Couleur mer par défaut en fond */
 }
 
@@ -692,17 +691,17 @@ tr:hover td {
   #map-controls {
     display: flex; /* Visibles sur tablettes et mobiles */
     gap: 10px;
-    
+
     /* Positionnement en surimpression de la carte (Overlay) */
     position: absolute;
-    top: 10px;      /* Légèrement décalé du haut de la carte */
-    right: 10px;    /* et à droite, ou left: 50% / transform: translateX(-50%) pour centrer */
-    z-index: 1000;  /* Au-dessus de la carte et des pins */
-    
+    top: 10px; /* Légèrement décalé du haut de la carte */
+    right: 10px; /* et à droite, ou left: 50% / transform: translateX(-50%) pour centrer */
+    z-index: 1000; /* Au-dessus de la carte et des pins */
+
     justify-content: center;
     margin-bottom: 0;
   }
-  
+
   /* Optionnel : Centrer les boutons si souhaité au lieu de droite */
   /*
   #map-controls {
