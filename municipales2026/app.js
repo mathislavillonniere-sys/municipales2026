@@ -1000,7 +1000,7 @@ const citiesData = [
         score: "27%",
         slogan: "Le sursaut clermontois",
       },
-       {
+      {
         name: "Antoine Darbois",
         party: "RN - UDR",
         color: "#0d378a",
@@ -1022,11 +1022,14 @@ const citiesData = [
         slogan: "Le Réveil clermontois",
       },
     ],
-    polls: [{
+    polls: [
+      {
         source: "Ifop (Fev. 2026)",
         url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/fevrier/10070-mun-clermont-ferrand-ifop-9-fevrier.pdf",
-        details: "Bianchi (PS) en tête à 37%, suivi de Bony (LR) à 27%, Darbois (RN) à 15%, Maximi (LFI) à 14% et Cartailler (SE) à 5%",
-      }, ],
+        details:
+          "Bianchi (PS) en tête à 37%, suivi de Bony (LR) à 27%, Darbois (RN) à 15%, Maximi (LFI) à 14% et Cartailler (SE) à 5%",
+      },
+    ],
     results2020: {
       tour1: [
         {
@@ -2260,13 +2263,7 @@ const citiesData = [
         slogan: "",
       },
     ],
-    polls: [
-      {
-        source: "Ifop (Nov 2024)",
-        url: "https://www.nicematin.com",
-        details: "Resserrement : Estrosi 32%, Ciotti 30%",
-      },
-    ],
+    polls: [],
     results2020: {
       tour1: [
         { candidate: "C. Estrosi", party: "LR", score: "47,62%" },
@@ -2301,49 +2298,55 @@ const citiesData = [
     mayorColor: "#0066CC",
     candidates: [
       {
-        name: "	Franck Proust",
-        party: "LR - UDI - PRV - HOR",
-        color: "#0066CC",
-        score: "",
-        slogan: "Tout Nîmes",
+        name: "Vincent Bouget",
+        party: "PCF - PS - PP - LÉ - G·s - PRG - L'Après - LFI diss",
+        color: "#dd0000",
+        score: "32%",
+        slogan: "Nîmes en commun",
       },
       {
         name: "Julien Sanchez",
         party: "RN - UDR - RPR - L'AF - LR diss.",
         color: "#0D378A",
-        score: "",
+        score: "23%",
         slogan: "Fiers d'être Nîmois !",
       },
       {
-        name: "Vincent Bouget",
-        party: "PCF - PS - PP - LÉ - G·s - PRG - L'Après - LFI diss",
-        color: "#dd0000",
-        score: "",
-        slogan: "Nîmes en commun",
-      },
-      {
-        name: "Pascal Dupretz",
-        party: "LFI",
-        color: "#cc2443",
-        score: "",
-        slogan: "Nîmes écologique et solidaire",
+        name: "	Franck Proust",
+        party: "LR - UDI - PRV - HOR",
+        color: "#0066CC",
+        score: "21%",
+        slogan: "Tout Nîmes",
       },
       {
         name: "Julien Plantier",
         party: "NA - RE",
         color: "#adc1fd",
-        score: "",
+        score: "14%",
         slogan: "L'avenir Nîmois",
       },
-       {
+      {
+        name: "Pascal Dupretz",
+        party: "LFI",
+        color: "#cc2443",
+        score: "7%",
+        slogan: "Nîmes écologique et solidaire",
+      },
+      {
         name: "Jean-Marc Philibert",
         party: "SE",
         color: "#cccccc",
-        score: "",
+        score: "3%",
         slogan: "Vivons Nîmes",
       },
     ],
-    polls: [],
+    polls: [
+      {
+        source: "Ifop (Nov 2024)",
+        url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/fevrier/10072-mun-nimes-opinionway-objectif-gard-12-fevrier.pdf",
+        details: "Resserrement : Estrosi 32%, Ciotti 30%",
+      },
+    ],
     results2020: {
       tour1: [
         { candidate: "J.P. Fournier", party: "LR", score: "34,35%" },
@@ -2520,10 +2523,11 @@ const citiesData = [
     ],
     // RÉACTIVATION DES SONDAGES
     polls: [
-       {
+      {
         source: "Cluster17 (fév. 2026)",
         url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/fevrier/10060-mun-paris-cluster-17-politico-2-fevrier.pdf",
-        details: "Paris : Grégoire augmente quand Dati baissse légèrement, dynamique pour Knafo",
+        details:
+          "Paris : Grégoire augmente quand Dati baissse légèrement, dynamique pour Knafo",
       },
       {
         source: "Ifop (Janv 2026)",
@@ -2674,7 +2678,7 @@ const citiesData = [
         score: "16%",
         slogan: "Perpignan, changez d’air !",
       },
-      
+
       {
         name: "Bruno Nougayrède",
         party: "DVD - LR - HOR - MoDem - UDI - RE",
@@ -2720,8 +2724,16 @@ const citiesData = [
       tour1: [
         { candidate: "Louis Aliot", party: "RN", score: "" },
         { candidate: "Mickael Idrac", party: "LFI - LÉ - G·s", score: "" },
-        { candidate: "Bruno Nougayrède", party: "DVD - LR - HOR - MoDem - UDI - RE", score: "" },
-        { candidate: "Mathias Blanc", party: "PS diss. - PCF - PRG - GÉ - L'AP - D! - PA - L'E - L'AE", score: "" },
+        {
+          candidate: "Bruno Nougayrède",
+          party: "DVD - LR - HOR - MoDem - UDI - RE",
+          score: "",
+        },
+        {
+          candidate: "Mathias Blanc",
+          party: "PS diss. - PCF - PRG - GÉ - L'AP - D! - PA - L'E - L'AE",
+          score: "",
+        },
         { candidate: "Agnès Langevine", party: "PP - PS - DVC", score: "" },
       ],
       tour2: [],
@@ -3166,14 +3178,14 @@ const citiesData = [
         score: "11%",
         slogan: "",
       },
-       {
+      {
         name: "Florian Kobryn",
         party: "LFI",
         color: "#cc2443",
         score: "9%",
         slogan: "Strasbourg fière et solidaire",
       },
-       {
+      {
         name: "Pierre Jakubowicz",
         party: "HOR - RE - MoDem",
         color: "#1d06e7",
@@ -3185,7 +3197,8 @@ const citiesData = [
       {
         source: "IPSOS (Fev. 2026)",
         url: "https://www.ipsos.com/fr-fr/municipales-2026-quelles-perspectives-dans-les-villes-de-lest-de-la-france",
-        details: "Strasbourg : Trautmann en tête au 1er tour, mais un second tour très ouvert",
+        details:
+          "Strasbourg : Trautmann en tête au 1er tour, mais un second tour très ouvert",
       },
     ],
     results2020: {
@@ -3202,12 +3215,20 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Catherine Trautmann", party: "PS", score: ""},
+        { candidate: "Catherine Trautmann", party: "PS", score: "" },
         { candidate: "Jeanne Barseghian", party: "Les Écologistes", score: "" },
-        { candidate: "Jean-Philippe Vetter", party: "LR - RES - RE diss.", score: "" },
+        {
+          candidate: "Jean-Philippe Vetter",
+          party: "LR - RES - RE diss.",
+          score: "",
+        },
         { candidate: "Virginie Joron", party: "RN", score: "" },
         { candidate: "Florian Kobryn", party: "LFI", score: "" },
-        { candidate: "Pierre Jakubowicz", party: "HOR - RE - MoDem", score: "" },
+        {
+          candidate: "Pierre Jakubowicz",
+          party: "HOR - RE - MoDem",
+          score: "",
+        },
       ],
       tour2: [],
     },
@@ -3449,12 +3470,11 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Doriane Bécue", party: "Divers Droite", score: ""},
+        { candidate: "Doriane Bécue", party: "Divers Droite", score: "" },
         { candidate: "Katy Vuylsteker", party: "LÉ - PS - PCF", score: "" },
         { candidate: "Franck Talpaert", party: "DVG", score: "" },
         { candidate: "Bastien Verbrugghe", party: "RN", score: "" },
         { candidate: "Émilie Croës", party: "LFI", score: "" },
-       
       ],
       tour2: [],
     },
