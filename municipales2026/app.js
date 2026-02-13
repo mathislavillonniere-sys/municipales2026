@@ -15,6 +15,7 @@ const citiesData = [
         name: "Sophie Joissains",
         party: "UDI",
         isMayor: true,
+
         color: "#66ccff",
         score: "",
         slogan: "",
