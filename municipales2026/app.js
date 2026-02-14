@@ -15,7 +15,6 @@ const citiesData = [
         name: "Sophie Joissains",
         party: "UDI",
         isMayor: true,
-
         color: "#66ccff",
         score: "",
         slogan: "",
@@ -3445,6 +3444,120 @@ const citiesData = [
       },
     ],
     polls: [],
+  },
+  {
+    name: "Sète",
+    coords: [43.4028, 3.6928],
+    population: 45337,
+    interco: "Sète Agglopôle Méditerranée",
+    mayor: "Hervé Marquès (DVD)",
+    mayorColor: "#66ccff", // DVG-PS
+    candidates: [
+      {
+        name: "Hervé Marquès",
+        party: "DVD",
+        isMayor: true,
+        color: "#66ccff",
+        score: "",
+        slogan: "Protégeons l'Avenir",
+      },
+      {
+        name: "Sébastien Denaja",
+        party: "PS-PP-PRG-GÉ-L'E",
+        color: "#ff8080",
+        score: "",
+        slogan: "Allons Ensemble ! avec Sébastien Denaja",
+      },
+      {
+        name: "Sébastien Pacull",
+        party: "RN-UDR-IDL",
+        color: "#0d378a",
+        score: "",
+        slogan: "Sète Rassemblée",
+      },
+      {
+        name: "Laura Seguin",
+        party: "DVG-PCF-LFI-LÉ-G·s",
+        color: "#ffc0c0",
+        score: "",
+        slogan: "Nouvelles Pages pour Sète",
+      },
+      {
+        name: "Pascal Pintre",
+        party: "DVD",
+        color: "#adc1fd",
+        score: "",
+        slogan: "Agir pour Sète",
+      },
+      {
+        name: "Josiane Amarger",
+        party: "PA",
+        color: "#6f2da8",
+        score: "",
+        slogan: "",
+      },
+      {
+        name: "Daniel Pilaudeau",
+        party: "LO",
+        color: "#bb0000",
+        score: "",
+        slogan: "Lutte ouvrière – Le camp des travailleurs",
+      },
+    ],
+    polls: [],
+    results2020: {
+      tour1: [
+        {
+          candidate: "François Commeinhes",
+          party: "DVD-LR-LREM",
+          score: "34,85%",
+        },
+        {
+          candidate: "Véronique Calueba",
+          party: "PCF-LFI-EÉLV-PA-PP-DVG",
+          score: "19,24%",
+        },
+        {
+          candidate: "Sébastien Denaja",
+          party: "PS-LRDG-GE",
+          score: "17,66%",
+        },
+        {
+          candidate: "Sébastien Pacull",
+          party: "DVD-RN-DLF-LR diss.",
+          score: "14,38",
+        },
+      ],
+      tour2: [
+        {
+          candidate: "François Commeinhes",
+          party: "DVD-LR-LREM",
+          score: "47,09%",
+        },
+        {
+          candidate: "Véronique Calueba",
+          party: "PCF-LFI-EÉLV-PA-PP-DVG-PS-LRDG-GE",
+          score: "41,10%",
+        },
+        {
+          candidate: "Sébastien Pacull",
+          party: "DVD-RN-DLF-LR diss.-UDI",
+          score: "11,80%",
+        },
+      ],
+    },
+    results2026: {
+      tour1: [
+        { candidate: "Hervé Marquès", party: "DVD", score: "" },
+        { candidate: "Sébastien Denaja", party: "PS-PP-PRG-GÉ-L'E", score: "" },
+        { candidate: "Sébastien Pacull", party: "RN-UDR-IDL", score: "" },
+        { candidate: "Laura Seguin", party: "DVG-PCF-LFI-LÉ-G·s", score: "" },
+        { candidate: "Pascal Pintre", party: "DVD", score: "" },
+        { candidate: "Josiane Amarger", party: "PA", score: "" },
+        { candidate: "Daniel Pilaudeau", party: "LO", score: "" },
+      ],
+      tour2: [],
+    },
   },
   {
     name: "Strasbourg",
