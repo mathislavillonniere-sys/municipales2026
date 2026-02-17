@@ -2456,26 +2456,33 @@ const citiesData = [
     mayorColor: "#0066CC", // Horizons (ex-LR)
     candidates: [
       {
+        name: "Eric Ciotti",
+        party: "UDR / RN ",
+        color: "#0D378A",
+        score: "41%",
+        slogan: "Le meilleur est à venir",
+      },
+      {
         name: "Christian Estrosi",
         party: "Horizons",
         isMayor: true,
         color: "#0066CC",
-        score: "",
-        slogan: "",
-      },
-      {
-        name: "Eric Ciotti",
-        party: "UDR / RN ",
-        color: "#0D378A",
-        score: "",
-        slogan: "",
+        score: "31%",
+        slogan: "Tous pour Nice",
       },
       {
         name: "Juliette Chesnel-Leroux",
         party: "ECO / PS / PCF",
         color: "#00C000",
-        score: "",
+        score: "12%",
         slogan: "",
+      },
+      {
+        name: "Mireille Damiano",
+        party: "LFI",
+        color: "#cc2443",
+        score: "10%",
+        slogan: "Nice! Front Populaire",
       },
     ],
     polls: [],
