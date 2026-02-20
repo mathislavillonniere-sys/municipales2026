@@ -3488,7 +3488,7 @@ const citiesData = [
     candidates: [
       {
         name: "Frédéric Nourrigeon",
-        party: "SE",
+        party: "SE / Liste Sortante",
         isMayor: true,
         color: "#808080",
         score: "",
