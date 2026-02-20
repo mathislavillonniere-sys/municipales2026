@@ -3489,7 +3489,6 @@ const citiesData = [
       {
         name: "Frédéric Nourrigeon",
         party: "SE",
-        listName: "Liste sans étiquette",
         isMayor: true,
         color: "#808080",
         score: "",
