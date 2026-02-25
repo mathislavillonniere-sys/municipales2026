@@ -506,6 +506,71 @@ const citiesData = [
       tour2: [],
     },
   },
+  {
+    name: "Avignon",
+    // Décalage vers le Nord-Ouest
+    coords: [43.95, 4.8166], // original: [48.9482, 2.2536]
+    population: 92188,
+    interco: "Grand Avignon",
+    mayor: " Cécile Helle (PS, ne se repésente pas)",
+    mayorColor: "#ff8080",
+    candidates: [
+      {
+        name: "Olivier Galzi",
+        party: "UDI - HOR",
+        color: "#66ccff",
+        score: "27%",
+        slogan: "Le bon sens pour Avignon",
+      },
+      {
+        name: "David Fournier",
+        party: "PS - LE - PP - GE - PA - PRG - L'Après",
+        color: "#ff8080",
+        score: "24%",
+        slogan: "Ensemble et Solidaires",
+      },
+      {
+        name: "Anne-Sophie Rigault",
+        party: "RN",
+        color: "#0d378a",
+        score: "23%",
+        slogan: "",
+      },
+      {
+        name: "Mathilde Louvain",
+        party: "LFI - PCF - G.s - AC",
+        color: "#cc2443",
+        score: "16%",
+        slogan: "Faire mieux pour Avignon",
+      },
+      {
+        name: "Stephan Fiori",
+        party: "DVD",
+        color: "#adc1fd",
+        score: "10%",
+        slogan: "Entreprendre pour Avignon",
+      },
+    ],
+    polls: [],
+    results2026: {
+      tour1: [
+        { candidate: "Georges Mothron", party: "LR", score: "" },
+        {
+          candidate: "Nicolas Bougeard",
+          party: "PS - PCF - G.s - PP - L'A - GRS - MRC - LÉ diss.",
+          score: "",
+        },
+        { candidate: "Anne-Sophie Rigault", party: "RN", score: "" },
+        {
+          candidate: "Mathilde Louvain",
+          party: "LFI - PCF - G.s - AC",
+          score: "",
+        },
+        { candidate: "Stephan Fiori", party: "DVD", score: "" },
+      ],
+      tour2: [],
+    },
+  },
 
   // --- B ---
   {

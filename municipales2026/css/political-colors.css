@@ -293,7 +293,7 @@
   color: var(--color-reg);
 }
 .text-div {
-  color: #13151d;
+  color: var(--color-div);
 }
 
 /* Autres petits partis */
