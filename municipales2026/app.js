@@ -17,7 +17,7 @@ const citiesData = [
         isMayor: true,
         color: "#66ccff",
         score: "34%",
-        slogan: "",
+        slogan: "Passionnément aixois",
       },
       {
         name: "Marc Pena",
@@ -45,7 +45,7 @@ const citiesData = [
         party: "HOR",
         color: "#0a539c",
         score: "8%",
-        slogan: "",
+        slogan: "AIX POUR VOUS",
       },
       {
         name: "Mounir Ben Ammar",
@@ -94,7 +94,7 @@ const citiesData = [
     coords: [49.894, 2.2957],
     population: 133012,
     interco: "Amiens Métropole",
-    mayor: "Brigitte Fouré (RE)",
+    mayor: "Hubert de Jenlis",
     mayorColor: "#fab622",
     candidates: [
       {
@@ -102,7 +102,7 @@ const citiesData = [
         party: "PS - LÉ - PCF - D! - PP - GÉ",
         color: "#ff8080",
         score: "28%",
-        slogan: "Pour Amiens",
+        slogan: "Pour Amiens en mieux, la Gauche unie, écologiste et citoyenne",
       },
       {
         name: "Hubert de Jenlis",
@@ -131,7 +131,7 @@ const citiesData = [
         party: "SE",
         color: "#cccccc",
         score: "6%",
-        slogan: "Amiens Ville d'Avenir",
+        slogan: "AMIENS AU COEUR",
       },
       {
         name: "Benoit Mercuzot",
@@ -148,13 +148,6 @@ const citiesData = [
         slogan: "Amiens Ville d'Avenir",
       },
       {
-        name: "Nicolas Reitzaum",
-        party: "SE",
-        color: "#cccccc",
-        score: "2%",
-        slogan: "Amiens, qui l’aime me suive !",
-      },
-      {
         name: "Paul-Éric Dècle",
         party: "LC",
         color: "#adc1fd",
@@ -162,11 +155,11 @@ const citiesData = [
         slogan: "Amiens au coeur",
       },
       {
-        name: "Ridha Farhat",
-        party: "SE",
-        color: "#cccccc",
+        name: "Jean-Patrick BAUDRY",
+        party: "LO",
+        color: "#bb0000",
         score: "1%",
-        slogan: "100% citoyen",
+        slogan: "Lutte ouvrière - Le camp des travailleurs",
       },
     ],
     polls: [
@@ -189,7 +182,6 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Brigitte Fouré", party: "RE", score: "" },
         {
           candidate: "Hubert de Jenlis",
           party: "RE / LR / Horizons",
@@ -200,15 +192,13 @@ const citiesData = [
           party: "PS - LÉ - PP - GÉ - LRDG",
           score: "",
         },
-        { candidate: "Léon Deffontaines", party: "PCF - D! - GES", score: "" },
         { candidate: "Damien Toumi", party: "RN", score: "" },
         { candidate: "Samy Olivier", party: "LFI", score: "" },
         { candidate: "Aurélien Caron", party: "LR", score: "" },
         { candidate: "Benoit Mercuzot", party: "DVC", score: "" },
         { candidate: "Paul-Éric Dècle", party: "LC", score: "" },
         { candidate: "Julia Bellina", party: "SE", score: "" },
-        { candidate: "Ridha Farhat", party: "SE", score: "" },
-        { candidate: "Nicolas Reitzaum", party: "SE", score: "" },
+        { candidate: "Jean-Patrick BAUDRY", party: "LO", score: "" },
       ],
       tour2: [],
     },
@@ -227,28 +217,28 @@ const citiesData = [
         isMayor: true,
         color: "#1d06e7",
         score: "",
-        slogan: "",
+        slogan: "Angers pour Vous",
       },
       {
         name: "Romain Laveau",
         party: "LÉ - PCF - PS - PP - G.s - GRS",
         color: "#00C000",
         score: "",
-        slogan: "",
+        slogan: "Demain Angers",
       },
       {
         name: "Aurore Lahondès",
         party: "Rassemblement National",
         color: "#0D378A",
         score: "",
-        slogan: "",
+        slogan: "Rassemblement pour Angers",
       },
       {
         name: "Arash Saeidi",
         party: "La France Insoumise",
         color: "#cc2443",
         score: "",
-        slogan: "",
+        slogan: "ANGERS POPULAIRE",
       },
       {
         name: "Valentin Rambault",
@@ -257,8 +247,61 @@ const citiesData = [
         score: "",
         slogan: "Angers 2026",
       },
+      {
+        name: "Céline L'Huillier",
+        party: "LO",
+        color: "#bb0000",
+        score: "",
+        slogan: "Lutte ouvrière - Le camp des travailleurs",
+      },
+      {
+        name: "Nicolas Cuisinier",
+        party: "NPA-R",
+        color: "#b71c1c",
+        score: "",
+        slogan: "NPA Révolutionnaires-ANGERS ouvrière et révolutionnaire",
+      },
     ],
     polls: [],
+    results2020: {
+      tour1: [
+        {
+          candidate: "Christophe Béchu",
+          party: "LR - LREM - MoDem - Agir - MR",
+          score: "57,82%",
+        },
+        {
+          candidate: "Silvia Camara-Tombini",
+          party: "PS - PP - PRG",
+          score: "16,80%",
+        },
+        {
+          candidate: "Yves Aurégan",
+          party: "EÉLV - G.s - PCF",
+          score: "14,08%",
+        },
+      ],
+    },
+    results2026: {
+      tour1: [
+        { candidate: "Christophe Béchu", party: "HOR - RE - MoDem", score: "" },
+        {
+          candidate: "Romain Laveau",
+          party: "LÉ - PCF - PS - PP - G.s - GRS",
+          score: "",
+        },
+        {
+          candidate: "Aurore Lahondès",
+          party: "Rassemblement National",
+          score: "",
+        },
+        { candidate: "Arash Saeidi", party: "La France Insoumise", score: "" },
+        { candidate: "Valentin Rambault", party: "DVC", score: "" },
+        { candidate: "Céline L'Huillier", party: "LO", score: "" },
+        { candidate: "Nicolas Cuisinier", party: "NPA-R", score: "" },
+      ],
+      tour2: [],
+    },
   },
   {
     name: "Angoulême",
@@ -274,49 +317,63 @@ const citiesData = [
         isMayor: true,
         color: "#1d06e7",
         score: "",
-        slogan: "",
+        slogan: "L'essentiel c'est vous !",
       },
       {
         name: "Christophe Duhoux-Salaberry",
         party: "LÉ - DVG",
         color: "#00C000",
         score: "",
-        slogan: "",
+        slogan: "Angoulême Collectif 2026",
       },
       {
         name: "Anne-Aziliz Petit-Louboutin",
         party: "LFI-PCF-DVG",
         color: "#cc2443",
         score: "",
-        slogan: "Union populaire Angoulême",
+        slogan: "L'union populaire Angoulême",
       },
       {
         name: "Raphaël Manzanas",
         party: "PS",
         color: "#ff8080",
         score: "",
-        slogan: "",
+        slogan: "CHANGER LA VILLE",
       },
       {
         name: "Patrick Mardikian",
         party: "PS",
         color: "#ff8080",
         score: "",
-        slogan: "",
+        slogan: "CHOISISSONS ANGOULEME AVEC PATRICK MARDIKIAN",
+      },
+      {
+        name: "Jean-Christophe Compain",
+        party: "REC",
+        color: "#13151d",
+        score: "",
+        slogan: "Agir Pour Angoulême",
       },
       {
         name: "Vincent You",
         party: "DVD",
         color: "#adc1fd",
         score: "",
-        slogan: "",
+        slogan: "ANGOULEME VOUS AIME",
       },
       {
         name: "Jesse Betruille",
         party: "RN",
         color: "#0d378a",
         score: "",
-        slogan: "",
+        slogan: "REDESSINONS ANGOULÊME",
+      },
+      {
+        name: "Olivier Nicolas",
+        party: "LO",
+        color: "#bb0000",
+        score: "",
+        slogan: "Lutte ouvrière - Le camp des travailleurs",
       },
     ],
     polls: [],
@@ -345,8 +402,10 @@ const citiesData = [
         },
         { candidate: "Raphaël Manzanas", party: "PS", score: "" },
         { candidate: "Patrick Mardikian", party: "PS", score: "" },
+        { candidate: "Jean-Christophe Compain", party: "REC", score: "" },
         { candidate: "Vincent You", party: "DVD", score: "" },
         { candidate: "Jesse Betruille", party: "RN", score: "" },
+        { candidate: "Olivier Nicolas", party: "LO", score: "" },
       ],
       tour2: [],
     },
@@ -1531,39 +1590,45 @@ const citiesData = [
         party: "Horizons",
         isMayor: true,
         color: "#0066CC",
-        score: "",
+        score: "37%",
         slogan: "",
       },
       {
         name: "Jean-Paul Lecoq",
         party: "PCF - PS - LÉ - G.s - PP - L'AP",
         color: "#CC0000",
-        score: "",
+        score: "35%",
         slogan: "Le Front Populaire havrais",
       },
       {
         name: "Franck Keller",
         party: "RN - UDR",
         color: "#072149",
-        score: "",
+        score: "18%",
         slogan: "Le Front Populaire havrais",
       },
       {
         name: "Charlotte Boulogne",
         party: "LFI",
         color: "#cc2443",
-        score: "",
+        score: "6%",
         slogan: "Le Havre insoumis",
       },
       {
         name: "Sophie Zarifian",
         party: "PCF - PS - LÉ - G.s - PP - L'AP",
         color: "#cccccc",
-        score: "",
+        score: "3%",
         slogan: "Le Havre en Débat",
       },
     ],
-    polls: [],
+    polls: [
+      {
+        source: "OpinionWay (fév. 2026)",
+        url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/fevrier/10098-mun-le-havre-opnionway-25-fevrier.pdf",
+        details: "Phillipe, joue sont avenir dans un second tour défavorable",
+      },
+    ],
     results2020: {
       tour1: [
         { candidate: "É. Philippe", party: "LREM/DVD", score: "43,59%" },
@@ -3552,12 +3617,12 @@ const citiesData = [
     mayorColor: "#808080", // SE
     candidates: [
       {
-        name: "Frédéric Nourrigeon",
-        party: "SE / Liste Sortante",
-        isMayor: true,
+        name: "Nathalie Lavillonniere",
+        party: "SE",
         color: "#808080",
+        isListSortante: true,
         score: "",
-        slogan: "",
+        slogan: "Agir ensemble pour notre commune",
       },
     ],
     polls: [],
@@ -4778,20 +4843,28 @@ document.addEventListener("DOMContentLoaded", () => {
                   ? `<span class="status-badge status-reelected"><span class="sb-icon">⟳</span>Réélu</span>`
                   : "";
 
-            // Si on affiche déjà un badge "Maire élu(e) / Maire réélu(e)" via les flags
-            // on ne doit pas afficher aussi le badge de statut (évite duplication/cocher bleue)
-            const showStatusHtml = !(cand.isElected || cand.isReelected);
+            // Si on affiche déjà un badge via les flags (maire ou liste élu/ réélu),
+            // on ne doit pas afficher aussi le badge de statut standard (évite duplication)
+            const showStatusHtml = !(
+              cand.isElected ||
+              cand.isReelected ||
+              cand.isListElected
+            );
 
             // Ajout de l'affichage du nom de la liste en petit
             const listHtml = cand.listName
               ? `<div style="font-size:0.75em; color:#888; font-style:italic; margin-top:2px;">"${cand.listName}"</div>`
               : "";
 
-            // Badges spéciaux pour le maire : sortant / élu / réélu
+            // Badges spéciaux pour le maire / la liste : sortant / élu / réélu / liste réélue
             const mayorBadgeParts = [];
             if (cand.isMayor) {
               mayorBadgeParts.push(
                 `<span style="font-size:0.7em; background:#f0f0f0; border:1px solid #ccc; color:#555; padding:0 3px; border-radius:3px; font-weight:normal; vertical-align: text-top;">Sortant</span>`,
+              );
+            } else if (cand.isListSortante) {
+              mayorBadgeParts.push(
+                `<span style="font-size:0.7em; background:#f0f0f0; border:1px solid #ccc; color:#555; padding:0 3px; border-radius:3px; font-weight:normal; vertical-align: text-top;">Liste sortante</span>`,
               );
             }
             if (cand.isReelected) {
@@ -4800,6 +4873,10 @@ document.addEventListener("DOMContentLoaded", () => {
               );
             } else if (cand.isElected) {
               mayorBadgeParts.push(`<span class="mayor-elected">élu(e)</span>`);
+            } else if (cand.isListElected) {
+              mayorBadgeParts.push(
+                `<span class="mayor-elected">Liste réélue</span>`,
+              );
             }
             const mayorBadge = mayorBadgeParts.length
               ? " " + mayorBadgeParts.join(" ")
@@ -5002,12 +5079,17 @@ function openDataEditor(city) {
       const isReelectedCb = document.createElement("input");
       isReelectedCb.type = "checkbox";
       isReelectedCb.checked = !!cand.isReelected;
-      colFlags.appendChild(document.createTextNode("Sortant "));
+      const isListSortanteCb = document.createElement("input");
+      isListSortanteCb.type = "checkbox";
+      isListSortanteCb.checked = !!cand.isListSortante;
+      colFlags.appendChild(document.createTextNode("Sortant"));
       colFlags.appendChild(isMayorCb);
       colFlags.appendChild(document.createTextNode(" Élu "));
       colFlags.appendChild(isElectedCb);
       colFlags.appendChild(document.createTextNode(" Réélu "));
       colFlags.appendChild(isReelectedCb);
+      colFlags.appendChild(document.createTextNode("Liste sortante"));
+      colFlags.appendChild(isListSortanteCb);
       // color
       const colColor = document.createElement("div");
       colColor.className = "col";
@@ -5103,6 +5185,8 @@ function openDataEditor(city) {
         isMayor: !!ins.isMayorCb.checked,
         isElected: !!ins.isElectedCb.checked,
         isReelected: !!ins.isReelectedCb.checked,
+        isListElected: !!ins.isElectedCb.checked,
+        isListSortante: !!ins.isListSortante.checked,
       };
     });
     newCity.candidates = newCands;
@@ -5178,11 +5262,17 @@ window.showCityDetails = function (cityName) {
         mayorBadgeParts.push(
           `<span style="background-color:#eee; color:#333; padding:2px 6px; border-radius:4px; font-size:0.75em; margin-left:6px; vertical-align:middle; border:1px solid #ccc; font-weight:normal;">Maire sortant(e)</span>`,
         );
+      } else if (cand.isListSortante) {
+        mayorBadgeParts.push(
+          `<span style="background-color:#eee; color:#333; padding:2px 6px; border-radius:4px; font-size:0.75em; margin-left:6px; vertical-align:middle; border:1px solid #ccc; font-weight:normal;">Liste sortant(e)</span>`,
+        );
       }
       if (cand.isReelected) {
         mayorBadgeParts.push(`<span class="mayor-reelected">réélu(e)</span>`);
       } else if (cand.isElected) {
         mayorBadgeParts.push(`<span class="mayor-elected">Maire élu(e)</span>`);
+      } else if (cand.isListElected) {
+        mayorBadgeParts.push(`<span class="mayor-elected">Liste réélue</span>`);
       }
       const mayorBadge = mayorBadgeParts.join(" ");
 
@@ -5195,7 +5285,11 @@ window.showCityDetails = function (cityName) {
           : cand.status;
       const statusBadge = renderStatusBadgeHTML(statusKeyFromFlags);
       // Si on a déjà le badge Maire élu(e)/réélu(e) via les flags, ne pas afficher le statut standard
-      const showStatusBadgeInDetails = !(cand.isElected || cand.isReelected);
+      const showStatusBadgeInDetails = !(
+        cand.isElected ||
+        cand.isReelected ||
+        cand.isListElected
+      );
 
       const listNameDisplay = cand.listName
         ? `<br><em style="font-size:0.9em; color:#666;">"${cand.listName}"</em>`
