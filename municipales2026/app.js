@@ -3769,8 +3769,8 @@ const citiesData = [
         name: "Charles Compagnon",
         party: "HOR - RE - MoDem - UDI - NÉ - DP - PB",
         color: "#1d06e7",
-        score: "",
-        slogan: "17%",
+        score: "17%",
+        slogan: "",
       },
     ],
     polls: [
