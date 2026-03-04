@@ -1,7 +1,7 @@
 (function () {
   // Contenu du footer (modifiable si vous voulez changer les textes/contacts)
   const siteName = "Observatoire Municipale";
-  const companyInfo = "Travail indépendant";
+  const companyInfo = "Site réalisé avec l'aide de L'Intéligence Artificielle";
 
   // Détection basique du contexte (racine vs sous-dossier /html/)
   const isHtmlSubDir =
