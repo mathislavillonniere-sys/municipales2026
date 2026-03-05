@@ -3560,49 +3560,76 @@ const citiesData = [
     candidates: [
       {
         name: "Emmanuel Grégoire",
-        party: "PS / Alliance de Gauche",
+        party: "PS - LÉ - PCF - PP - L'A - GRS",
         color: "#FF3333",
-        score: "33%",
+        score: "35%",
         slogan: "Paris en grand",
       },
       {
         name: "Rachida Dati",
-        party: "LR / Droite parisienne",
+        party: "LR - MoDem - UDI - RE diss. - HOR diss.",
         color: "#0066cc",
-        score: "26%",
+        score: "27%",
         slogan: "",
       },
       {
         name: "Pierre-Yves Bournazel",
-        party: "Horizons / Centre",
-        color: "#fab622",
-        score: "14%",
+        party: "HOR - RE - LC - Cap21 - MEI - PR - LR diss.",
+        color: "#1d06e7",
+        score: "11,5%",
         slogan: "",
       },
       {
-        name: "Sophia Chikirou",
-        party: "LFI",
-        color: "#cc2443",
-        score: "12%",
-        slogan: "Le Nouveau Paris Populaire",
-      },
-      {
         name: "Sarah Knafo",
-        party: "Reconquête!",
+        party: "REC - LR diss.",
         color: "#13151d",
-        score: "10%",
+        score: "11,5%",
         slogan: "Une Ville Heureuse",
       },
       {
+        name: "Sophia Chikirou",
+        party: "LFI - LÉ diss. - PG - POI",
+        color: "#cc2443",
+        score: "10%",
+        slogan: "Le Nouveau Paris Populaire",
+      },
+      {
         name: "Thierry Mariani",
-        party: "RN",
+        party: "RN - LDP - UDR",
         color: "#0D378A",
         score: "4%",
         slogan: "",
       },
+      {
+        name: "Blandine Chauvel",
+        party: "NPA -R",
+        color: "#bb0000",
+        score: "0,5%",
+        slogan: "NPA Révolutionnaires - Paris, ouvrière et révolutionnaire",
+      },
+
+      {
+        name: "Marielle Saulnier",
+        party: "LO",
+        color: "#bb0000",
+        score: "0,5%",
+        slogan: "Lutte ouvrière – Le camp des travailleurs",
+      },
+      {
+        name: "Mahel Pierot-Guimbaud",
+        party: "PT",
+        color: "#bb0000",
+        score: "",
+        slogan: "Les coupes budgétaires à Paris ça suffit !",
+      },
     ],
     // RÉACTIVATION DES SONDAGES
     polls: [
+      {
+        source: "IPSOS (Mars 2026)",
+        url: "https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/municipales-2026-intentions-vote-paris-rapport-complet.pdfss",
+        details: "",
+      },
       {
         source: "Cluster17 (fév. 2026)",
         url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/fevrier/10060-mun-paris-cluster-17-politico-2-fevrier.pdf",
@@ -3618,16 +3645,6 @@ const citiesData = [
         source: "Ifop (Janv 2026)",
         url: "https://www.ifop.com/wp-content/uploads/2026/01/122153_-le-climat-politique-a-paris.pdf",
         details: "Duel serré pour Grégoire/Dati",
-      },
-      {
-        source: "Ipsos (Déc 2025)",
-        url: "https://www.ipsos.com/fr-fr",
-        details: "Dati (LR) 32% - Grégoire (PS) 28%",
-      },
-      {
-        source: "Ifop (Nov 2025)",
-        url: "https://www.ifop.com",
-        details: "Duel serré au second tour Dati/Grégoire",
       },
     ],
     results2020: {
@@ -3647,22 +3664,29 @@ const citiesData = [
       tour1: [
         {
           candidate: "Emmanuel Grégoire",
-          party: "PS / Alliance de Gauche",
+          party: "PS - LÉ - PCF - PP - L'A - GRS",
           score: "",
         },
         {
           candidate: "Rachida Dati",
-          party: "LR / Droite parisienne",
+          party: "LR - MoDem - UDI - RE diss. - HOR diss.",
           score: "",
         },
         {
           candidate: "Pierre-Yves Bournazel",
-          party: "Horizons / Centre",
+          party: "HOR - RE - LC - Cap21 - MEI - PR - LR diss.",
           score: "",
         },
-        { candidate: "Sophia Chikirou", party: "LFI", score: "" },
-        { candidate: "Sarah Knafo", party: "Reconquête!", score: "" },
-        { candidate: "Thierry Mariani", party: "RN", score: "" },
+        {
+          candidate: "Sophia Chikirou",
+          party: "LFI - LÉ diss. - PG - POI",
+          score: "",
+        },
+        { candidate: "Sarah Knafo", party: "REC - LR diss.", score: "" },
+        { candidate: "Thierry Mariani", party: "RN - LDP - UDR", score: "" },
+        { candidate: "Blandine Chauvel", party: "NPA -R", score: "" },
+        { candidate: "Mahel Pierot-Guimbaud", party: "PT", score: "" },
+        { candidate: "Marielle Saulnier", party: "LO", score: "" },
       ],
       tour2: [],
     },
@@ -3719,13 +3743,6 @@ const citiesData = [
         slogan: "Arraou avec vous",
       },
       {
-        name: "Reynald Cronier",
-        party: "DLF",
-        color: "#052656",
-        score: "",
-        slogan: "Pau, c'est vous",
-      },
-      {
         name: "Cyrille Marconi",
         party: "LO",
         color: "#bb0000",
@@ -3734,6 +3751,43 @@ const citiesData = [
       },
     ],
     polls: [],
+    results2020: {
+      tour1: [
+        { candidate: "F. Bayrou", party: "MoDem - LREM - LR", score: "45,23%" },
+        {
+          candidate: "J. Marbot",
+          party: "PS - PCF - PP - LRDG",
+          score: "21,98%",
+        },
+        { candidate: "J-F. Blanco", party: "EÉLV", score: "14,62%" },
+        { candidate: "D. Bouzon", party: "RN - LDP", score: "6,93%" },
+        { candidate: "P. Bartoloméo", party: "LFI - GJ", score: "5,36%" },
+      ],
+      tour2: [
+        { candidate: "F. Bayrou", party: "MoDem - LREM - LR", score: "55,46%" },
+        {
+          candidate: "J. Marbot",
+          party: "PS - PCF - PP - LRDG - EELV - LFI",
+          score: "44,53%",
+        },
+      ],
+    },
+    results2026: {
+      tour1: [
+        { candidate: "François Bayrou", party: "MoDem - RE - LR", score: "" },
+        {
+          candidate: "Jérôme Marbot",
+          party: "PS - PCF - G.s - GÉ - L'AP",
+          score: "",
+        },
+        { candidate: "Margaux Taillefer", party: "RN", score: "" },
+        { candidate: "Jean-François Blanco", party: "DVE - LFI", score: "" },
+        { candidate: "Pascal Boniface", party: "Divers Centre", score: "" },
+        { candidate: "Philippe Arraou", party: "Divers Centre", score: "" },
+        { candidate: "Cyrille Marconi", party: "LO", score: "" },
+      ],
+      tour2: [],
+    },
   },
   {
     name: "Perpignan",
@@ -3780,6 +3834,13 @@ const citiesData = [
         score: "9%",
         slogan: "Plus forts pour Perpignan",
       },
+      {
+        name: "Pascale Advenard",
+        party: "LO",
+        color: "#bb0000",
+        score: "9%",
+        slogan: "Lutte ouvrière - Le camp des travailleurs",
+      },
     ],
     polls: [
       {
@@ -3790,14 +3851,14 @@ const citiesData = [
     ],
     results2020: {
       tour1: [
-        { candidate: "L. Aliot", party: "RN", score: "48,3%" },
-        { candidate: "A. Langevine", party: "EELV", score: "19,3%" },
-        { candidate: "J. Lefebvre", party: "LREM", score: "13,4%" },
+        { candidate: "L. Aliot", party: "RN", score: "35,65%" },
+        { candidate: "J-M Pujol", party: "LR", score: "18,43%" },
+        { candidate: "A. Langevine", party: "EELV", score: "14,51%" },
+        { candidate: "R. Grau", party: "LREM", score: "13,17%" },
       ],
       tour2: [
-        { candidate: "L. Aliot", party: "RN", score: "53,3%" },
-        { candidate: "A. Langevine", party: "EELV", score: "25,5%" },
-        { candidate: "J. Lefebvre", party: "LREM", score: "11,2%" },
+        { candidate: "L. Aliot", party: "RN", score: "53,09%" },
+        { candidate: "J-M Pujol", party: "LR", score: "46,91%" },
       ],
     },
     results2026: {
@@ -6073,7 +6134,7 @@ window.showCityDetails = function (cityName) {
       results2026 = { tour1, tour2 };
     }
 
-    resHtml += `<h3>Résultats 2026 (provisoires, sans chiffres)</h3>`;
+    resHtml += `<h3>Résultats 2026</h3>`;
     resHtml += `<div style="display:flex; gap:20px; flex-wrap:wrap;">`;
     resHtml +=
       `<div style="flex:1; min-width:250px;">` +

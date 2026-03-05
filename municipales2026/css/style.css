@@ -511,6 +511,11 @@ header + .container {
   box-shadow: 0 6px 18px rgba(12, 24, 48, 0.06);
 }
 
+/* Petit espace au-dessus du bloc des résultats injecté dynamiquement */
+#results-wrapper {
+  margin-top: 15px;
+}
+
 h3 {
   color: var(--primary-color);
   margin-top: 0;
