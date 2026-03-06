@@ -4165,6 +4165,35 @@ const citiesData = [
         details: "Le PS intouchable à Rennes.",
       },
     ],
+    results2020: {
+      tour1: [
+        {
+          candidate: "N. Appéré",
+          party: "PS - PCF - G·s - MR - PP",
+          score: "32,77%",
+        },
+        { candidate: "M. Theurier", party: "EELV - UDB - ND", score: "25,35%" },
+        { candidate: "C. Gandon", party: "LREM-UDI", score: "14,29%" },
+        {
+          candidate: "C. Compagnon",
+          party: "DVD - LR - MoDem - PB",
+          score: "12,21%",
+        },
+      ],
+      tour2: [
+        {
+          candidate: "N. Appéré",
+          party: "PS - PCF - G·s - MR - PP / EELV - UDB - ND",
+          score: "65,35%",
+        },
+        { candidate: "C. Gandon", party: "LREM-UDI", score: "17,49%" },
+        {
+          candidate: "C. Compagnon",
+          party: "DVD - LR - MoDem - PB",
+          score: "17,15%",
+        },
+      ],
+    },
     results2026: {
       tour1: [
         {
