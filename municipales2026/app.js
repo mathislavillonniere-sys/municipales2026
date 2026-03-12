@@ -2308,7 +2308,20 @@ const citiesData = [
         slogan: "Lutte ouvrière - Le camp des travailleurs",
       },
     ],
-    polls: [],
+    polls: [
+      {
+        source: "IFOP (Mars 2026)",
+        url: "https://www.commission-des-sondages.fr/notices/files/notices/2026/mars/10148-mun-limoges-ifop-mars-france-3-regions-12-mars.pdf",
+        details:
+          "Les 3 candidats, Guerin, Maudet et Miguel dans la marge d'erreur, le maire sortant faible ",
+      },
+      {
+        source: "Cluster 17 (FEV 2026)",
+        url: "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/haute-vienne/limoges/municipales-a-limoges-deux-sondages-et-cinq-candidats-potentiellement-au-second-tour-3314754.html",
+        details:
+          "Miguel premier d'une courte tête, Guerin et Maudet fort, second tour très ouvert ",
+      },
+    ],
     results2020: {
       tour1: [
         { candidate: "E.R. Lombertie", party: "LR", score: "46,21%" },
@@ -2695,14 +2708,14 @@ const citiesData = [
         isMayor: true,
         color: "#FF3333",
         score: "",
-        slogan: "",
+        slogan: "Demain Montpellier",
       },
       {
         name: "Nathalie Oziol",
         party: "LFI",
         color: "#cc2443",
         score: "",
-        slogan: "",
+        slogan: "Faire mieux pour Montpellier",
       },
       {
         name: "Mohed Altrad",
@@ -2730,7 +2743,7 @@ const citiesData = [
         party: "RN / UDR",
         color: "#0d378a",
         score: "",
-        slogan: "",
+        slogan: "Libérer Montpellier !",
       },
       {
         name: "Isabelle Perrein",
