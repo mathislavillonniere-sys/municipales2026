@@ -10,7 +10,7 @@
   --text-color: #1f2937;
   /* Surfaces et accents (ne touche PAS aux couleurs politiques) */
   --header-bg: #f3f0e9;
-  --panel-bg: rgba(255,255,255,0.9);
+  --panel-bg: rgba(255, 255, 255, 0.9);
   --card-bg: #ffffff;
   --muted-color: #4b5563;
   --muted-bg: #f0f4f8;
@@ -26,14 +26,15 @@
     --bg-color: #06111a;
     --text-color: #e6eef8;
     --header-bg: #08121a;
-    --panel-bg: rgba(6,18,26,0.7);
+    --panel-bg: rgba(6, 18, 26, 0.7);
+    --primary-color: #e6eef8;
     --card-bg: #0b1620;
     --muted-color: #9aa6b2;
-    --muted-bg: rgba(255,255,255,0.02);
+    --muted-bg: rgba(255, 255, 255, 0.02);
     --map-bg: #071422;
-    --image-map-bg: rgba(255,255,255,0.02);
-    --popup-border: rgba(255,255,255,0.04);
-    --pin-shadow: rgba(0,0,0,0.6);
+    --image-map-bg: rgba(255, 255, 255, 0.02);
+    --popup-border: rgba(255, 255, 255, 0.04);
+    --pin-shadow: rgba(0, 0, 0, 0.6);
     /* Important: ne pas toucher aux variables politiques (--color-*) */
   }
 }
