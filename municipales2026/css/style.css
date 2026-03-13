@@ -27,7 +27,7 @@
   :root {
     --bg-color: #06111a;
     --text-color: #e6eef8;
-    --header-bg: #08121a;
+    --header-bg: #000000;
     --panel-bg: rgba(6, 18, 26, 0.7);
     --primary-color: #e6eef8;
     --nav-btn: #0b1620;
