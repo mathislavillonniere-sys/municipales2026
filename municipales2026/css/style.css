@@ -1362,7 +1362,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -1563,7 +1563,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -1764,7 +1764,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -1965,7 +1965,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -2166,7 +2166,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -2367,7 +2367,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -2568,7 +2568,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -2769,7 +2769,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -2970,7 +2970,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -3171,7 +3171,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -3372,7 +3372,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
@@ -3573,7 +3573,7 @@ header {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 28px 16px;
   font-size: 0.95rem;
