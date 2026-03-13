@@ -875,7 +875,7 @@ tr:hover td {
 
 /* Footer site */
 .site-footer {
-  background: #f3f0e9;
+  background: var(--header-bg);
   color: #222;
   padding: 16px 12px;
   font-size: 0.9rem;
