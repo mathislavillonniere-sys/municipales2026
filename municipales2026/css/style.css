@@ -12,6 +12,7 @@
   --header-bg: #f3f0e9;
   --panel-bg: rgba(255, 255, 255, 0.9);
   --card-bg: #ffffff;
+  --nav-btn: #ffffff;
   --muted-color: #4b5563;
   --muted-bg: #f0f4f8;
   --map-bg: #f8f8f8;
@@ -28,6 +29,7 @@
     --header-bg: #08121a;
     --panel-bg: rgba(6, 18, 26, 0.7);
     --primary-color: #e6eef8;
+    --nav-btn: #0b1620;
     --card-bg: #0b1620;
     --muted-color: #9aa6b2;
     --muted-bg: rgba(255, 255, 255, 0.02);
@@ -662,7 +664,7 @@ tr:hover td {
 
 .nav-btn.active {
   background: var(--primary-color);
-  color: white;
+  color: var(--nav-btn);
   border-color: var(--primary-color);
   box-shadow: 0 4px 12px rgba(8, 61, 119, 0.2);
 }
@@ -758,7 +760,7 @@ tr:hover td {
 }
 
 #map-controls button:active {
-  background-color: #eee !important;
+  background-color: var(--popup-border) !important;
   transform: translateY(1px);
 }
 
@@ -942,7 +944,7 @@ tr:hover td {
 #data-editor-modal input[type="color"],
 #data-editor-modal input[type="number"] {
   padding: 6px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
 #data-editor-modal label {
