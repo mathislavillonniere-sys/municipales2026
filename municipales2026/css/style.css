@@ -42,6 +42,9 @@
     /* Important: ne pas toucher aux variables politiques (--color-*) */
   }
 }
+.detail-interco {
+  color: var(--texte-color-btn);
+}
 
 html,
 body {

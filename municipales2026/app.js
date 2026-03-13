@@ -6510,8 +6510,8 @@ window.showCityDetails = function (cityName) {
         ? `<br><em style="font-size:0.9em; color:#666;">"${cand.listName}"</em>`
         : "";
       const sloganDisplay = cand.slogan
-        ? `<br><span style="font-size:0.85em; color:#555; font-style:italic;">"${cand.slogan}"</span>`
-        : `<br><span style="font-size:0.85em; color:#aaa; font-style:italic;">Slogan de liste</span>`; // Affichage par défaut si vide
+        ? `<br><span style="font-size:0.85em; color:var(--texte-color-btn); font-style:italic;">"${cand.slogan}"</span>`
+        : `<br><span style="font-size:0.85em; color:var(--texte-color-btn);; font-style:italic;">Slogan de liste</span>`; // Affichage par défaut si vide
 
       li.innerHTML = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${cand.color};margin-right:8px;"></span> 
                 <b>${cand.name}</b> ${mayorBadge} ${showStatusBadgeInDetails ? statusBadge : ""} <span style="font-size:0.9em; color:#555;">(${cand.party})</span>${scoreTxt}
