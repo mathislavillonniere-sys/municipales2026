@@ -5,29 +5,36 @@
   --primary-color: #0d1f31;
   /* bleu LR par défaut */
   --secondary-color: var(--color-ps);
-  /* Couleurs principales (thème clair par défaut) */
+  /* rouge PS par défaut */
   --bg-color: #f7f9fc;
   --text-color: #1f2937;
+  /* Surfaces et accents (ne touche PAS aux couleurs politiques) */
   --header-bg: #f3f0e9;
-  --panel-bg: rgba(255, 255, 255, 0.9);
+  --panel-bg: rgba(255,255,255,0.9);
   --card-bg: #ffffff;
   --muted-color: #4b5563;
   --muted-bg: #f0f4f8;
-  --pin-shadow: rgba(8, 61, 119, 0.953);
+  --map-bg: #f8f8f8;
+  --image-map-bg: #e6f2ff;
+  --popup-border: #eee;
+  --pin-shadow: rgba(7, 63, 123, 0.953);
 }
 
-/* Adaptation automatique si l'utilisateur préfère le mode sombre */
+/* Thème sombre : uniquement surfaces / textes, on NE CHANGE PAS les couleurs des partis */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #071226;
+    --bg-color: #06111a;
     --text-color: #e6eef8;
-    --header-bg: #071227;
-    --panel-bg: rgba(8, 12, 20, 0.6);
-    --card-bg: #071227;
+    --header-bg: #08121a;
+    --panel-bg: rgba(6,18,26,0.7);
+    --card-bg: #0b1620;
     --muted-color: #9aa6b2;
-    --muted-bg: rgba(255,255,255,0.03);
-    --primary-color: #9ad0ff;
-    --pin-shadow: rgba(0, 0, 0, 0.6);
+    --muted-bg: rgba(255,255,255,0.02);
+    --map-bg: #071422;
+    --image-map-bg: rgba(255,255,255,0.02);
+    --popup-border: rgba(255,255,255,0.04);
+    --pin-shadow: rgba(0,0,0,0.6);
+    /* Important: ne pas toucher aux variables politiques (--color-*) */
   }
 }
 
@@ -89,7 +96,7 @@ h1 {
 }
 
 .subtitle {
-  color: #1a1a1a;
+  color: var(--text-color);
   font-style: italic;
   margin: 0;
   font-size: 1.8rem; /* Agrandissement du titre */
@@ -149,7 +156,7 @@ header + .container {
 
 .hero-content p {
   margin: 0;
-  color: #4b5563;
+  color: var(--muted-color);
   font-size: 1.1rem;
 }
 
@@ -188,7 +195,7 @@ header + .container {
   /* Margin top réduite */
   margin-top: 70px;
   position: relative;
-  background-color: #f8f8f8; /* Couleur mer par défaut en fond */
+  background-color: var(--map-bg); /* Couleur mer par défaut en fond */
 }
 
 /* Conteneur image-map */
@@ -204,7 +211,7 @@ header + .container {
   border: 1px solid #ccc;
 
   /* SÉCURITÉ : On remet la couleur de fond pour voir la zone même sans image */
-  background-color: #e6f2ff;
+  background-color: var(--image-map-bg);
 
   /* SÉCURITÉ : On assure une hauteur min pour que la carte ne disparaisse pas */
   min-height: auto;
@@ -289,7 +296,7 @@ header + .container {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
   text-align: left;
   cursor: default;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid var(--popup-border);
   /* Petite flèche en bas (optionnel, fait avec pseudo-élément si besoin) */
 }
 
@@ -318,7 +325,7 @@ header + .container {
   margin: 0 0 10px 0;
   font-size: 1.1em;
   color: var(--primary-color);
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--popup-border);
   padding-bottom: 5px;
 }
 
@@ -353,11 +360,11 @@ header + .container {
 
 .c-name {
   font-weight: 600;
-  color: #333;
+  color: var(--text-color);
 }
 .c-party {
   font-size: 0.8em;
-  color: #666;
+  color: var(--muted-color);
 }
 
 /* Nouveau style pour le score dans le popup */
@@ -445,8 +452,8 @@ header + .container {
   #detail-polls tr {
     display: block;
     margin-bottom: 15px;
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--card-bg);
+    border: 1px solid var(--popup-border);
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -525,7 +532,7 @@ header + .container {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--card-bg);
   padding: 18px;
   border-radius: 8px;
   border-left: 4px solid var(--primary-color);
