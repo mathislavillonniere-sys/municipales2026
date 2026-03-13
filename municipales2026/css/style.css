@@ -18,6 +18,7 @@
   --map-bg: #f8f8f8;
   --image-map-bg: #e6f2ff;
   --popup-border: #eee;
+  --texte-color-btn: #333;
   --pin-shadow: rgba(7, 63, 123, 0.953);
 }
 
@@ -30,6 +31,7 @@
     --panel-bg: rgba(6, 18, 26, 0.7);
     --primary-color: #e6eef8;
     --nav-btn: #0b1620;
+    --texte-color-btn: #e6eef8;
     --card-bg: #0b1620;
     --muted-color: #9aa6b2;
     --muted-bg: rgba(255, 255, 255, 0.02);
@@ -647,7 +649,7 @@ tr:hover td {
   padding: 6px 10px; /* Réduction du padding */
   border-radius: 6px;
   cursor: pointer;
-  color: #333;
+  color: var(--texte-color-btn);
   font-weight: 600;
   font-size: 0.9rem; /* Taille de police légèrement réduite */
   white-space: nowrap; /* Empêche le texte du bouton de passer à la ligne */
@@ -899,7 +901,7 @@ tr:hover td {
 }
 .site-footer h3 {
   margin: 0 0 8px 0;
-  color: var(--primary-color);
+  color: var(--texte-color-btn);
   font-size: 1rem;
 }
 .site-footer .footer-desc {
