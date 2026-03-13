@@ -25,7 +25,7 @@
 /* Thème sombre : uniquement surfaces / textes, on NE CHANGE PAS les couleurs des partis */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #06111a;
+    --bg-color: #000000;
     --text-color: #e6eef8;
     --header-bg: #000000;
     --panel-bg: rgba(6, 18, 26, 0.7);
