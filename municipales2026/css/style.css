@@ -5,9 +5,30 @@
   --primary-color: #0d1f31;
   /* bleu LR par défaut */
   --secondary-color: var(--color-ps);
-  /* rouge PS par défaut */
+  /* Couleurs principales (thème clair par défaut) */
   --bg-color: #f7f9fc;
   --text-color: #1f2937;
+  --header-bg: #f3f0e9;
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --card-bg: #ffffff;
+  --muted-color: #4b5563;
+  --muted-bg: #f0f4f8;
+  --pin-shadow: rgba(8, 61, 119, 0.953);
+}
+
+/* Adaptation automatique si l'utilisateur préfère le mode sombre */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #071226;
+    --text-color: #e6eef8;
+    --header-bg: #071227;
+    --panel-bg: rgba(8, 12, 20, 0.6);
+    --card-bg: #071227;
+    --muted-color: #9aa6b2;
+    --muted-bg: rgba(255,255,255,0.03);
+    --primary-color: #9ad0ff;
+    --pin-shadow: rgba(0, 0, 0, 0.6);
+  }
 }
 
 html,
@@ -34,7 +55,7 @@ body {
 }
 
 header {
-  background-color: #f3f0e9; /* Couleur beige/papier du logo */
+  background-color: var(--header-bg); /* Couleur beige/papier du logo */
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -110,7 +131,7 @@ header + .container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--panel-bg);
   padding: 20px 30px;
   border-radius: 8px;
   text-align: center;
@@ -234,7 +255,7 @@ header + .container {
   border-radius: 50%;
   background: var(--primary-color);
   border: 2px solid white;
-  box-shadow: 0 2px 6px rgba(7, 63, 123, 0.953);
+  box-shadow: 0 2px 6px var(--pin-shadow);
   cursor: pointer;
   /* Animation Pulse */
   animation: pulse 2s infinite;
@@ -261,14 +282,14 @@ header + .container {
   bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: var(--card-bg);
   width: 240px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
   text-align: left;
   cursor: default;
-  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,0.06);
   /* Petite flèche en bas (optionnel, fait avec pseudo-élément si besoin) */
 }
 
@@ -343,7 +364,7 @@ header + .container {
 .c-score {
   font-weight: 800;
   color: var(--primary-color);
-  background-color: #f0f4f8;
+  background-color: var(--muted-bg);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.9em;
