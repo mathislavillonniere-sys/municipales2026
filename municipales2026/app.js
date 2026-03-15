@@ -1958,20 +1958,6 @@ const citiesData = [
         score: "",
         slogan: "Résolument Yonnais",
       },
-      {
-        name: "Anita Charrieau",
-        party: "PCF",
-        color: "#dd0000",
-        score: "",
-        slogan: "FAIRE ENSEMBLE - LISTE DE LA SOCIÉTÉ",
-      },
-      {
-        name: "Gilles Robin",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
-      },
     ],
     polls: [],
     results2020: {
@@ -1986,14 +1972,19 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Luc Bouard", party: "HOR-MoDem-LR-RE", score: "" },
-        { candidate: "Romain Bossis", party: "DVG-LFI-PS-LÉ-PP", score: "" },
-        { candidate: "Freddy Roy", party: "RN-UDR", score: "" },
-        { candidate: "Anita Charrieau", party: "PCF", score: "" },
-        { candidate: "Gilles Robin", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        {
+          candidate: "Romain Bossis",
+          party: "DVG-LFI-PS-LÉ-PP",
+          score: "46,27%",
+        },
+
+        { candidate: "Luc Bouard", party: "HOR-MoDem-LR-RE", score: "37,77%" },
+        { candidate: "Freddy Roy", party: "RN-UDR", score: "11,74%" },
+        { candidate: "Anita Charrieau", party: "PCF", score: "2,63%" },
+        { candidate: "Gilles Robin", party: "LO", score: "1,60%" },
+        { candidate: "Participation", score: "55,67%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,94%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,97%" },
       ],
       tour2: [],
     },
@@ -2028,34 +2019,6 @@ const citiesData = [
         score: "",
         slogan: "LE HAVRE D'ABORD, LES HAVRAIS TOUJOURS !",
       },
-      {
-        name: "Charlotte Boulogne",
-        party: "LFI",
-        color: "#cc2443",
-        score: "",
-        slogan: "Le Havre insoumis",
-      },
-      {
-        name: "Sophie Zarifian",
-        party: "DVG",
-        color: "#ffc0c0",
-        score: "",
-        slogan: "Le Havre en Débat",
-      },
-      {
-        name: "Magali Cauchois",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
-      },
-      {
-        name: "Marie Le Cieux",
-        party: "DVG",
-        color: "#ffc0c0",
-        score: "",
-        slogan: "La villes est à vous",
-      },
     ],
     polls: [
       {
@@ -2076,30 +2039,34 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Édouard Philippe", party: "Horizons", score: "" },
-        { candidate: "Jean-Paul Lecoq", party: "PCF", score: "" },
-        { candidate: "Franck Keller", party: "RN - UDR", score: "" },
-        { candidate: "Charlotte Boulogne", party: "LFI", score: "" },
+        { candidate: "Édouard Philippe", party: "Horizons", score: "43,76%" },
+        { candidate: "Jean-Paul Lecoq", party: "PCF", score: "33,25%" },
+        { candidate: "Franck Keller", party: "RN - UDR", score: "15,30%" },
+        { candidate: "Charlotte Boulogne", party: "LFI", score: "4,00%" },
+        {
+          candidate: "Marie Le Cieux",
+          party: "DVG",
+          score: "1,98%",
+        },
         {
           candidate: "Sophie Zarifian",
           party: "DVG",
-          score: "",
+          score: "1,05%",
         },
         {
           candidate: "Magali Cauchois",
           party: "LO",
-          score: "",
+          score: "0,66%",
         },
-        {
-          candidate: "Marie Le Cieux",
-          party: "DVG",
-          score: "",
-        },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
+        { candidate: "Participation", score: "52,42%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "2,04%" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
+      tour2: [
+        { candidate: "Édouard Philippe", party: "Horizons", score: "" },
+        { candidate: "Jean-Paul Lecoq", party: "PCF", score: "" },
+        { candidate: "Franck Keller", party: "RN - UDR", score: "" },
+      ],
     },
   },
   {
@@ -2323,12 +2290,19 @@ const citiesData = [
     mayorColor: "#0066CC", // LR
     candidates: [
       {
-        name: "Émile R. Lombertie",
-        party: "DVD",
-        isMayor: true,
-        color: "#adc1fd",
+        name: "Guillaume Guérin",
+        party: "LR - DVD",
+        color: "#0066CC",
         score: "",
-        slogan: "Avec Lombertie, soyons fiers de Limoges",
+        slogan: "Limoges en perspectives",
+      },
+
+      {
+        name: "Damien Maudet",
+        party: "LFI - G.s - LÉ - DVG",
+        color: "#cc2443",
+        score: "",
+        slogan: "Limoges Front Populaire - social et écologique",
       },
       {
         name: "Thierry Miguel",
@@ -2338,20 +2312,6 @@ const citiesData = [
         slogan: "Pour Limoges",
       },
       {
-        name: "Damien Maudet",
-        party: "LFI - G.s - LÉ - DVG",
-        color: "#cc2443",
-        score: "",
-        slogan: "Limoges Front Populaire - social et écologique",
-      },
-      {
-        name: "Guillaume Guérin",
-        party: "LR - DVD",
-        color: "#0066CC",
-        score: "",
-        slogan: "Limoges en perspectives",
-      },
-      {
         name: "Albin Freychet",
         party: "RN",
         color: "#0D378A",
@@ -2359,25 +2319,12 @@ const citiesData = [
         slogan: "Limoges en Grand",
       },
       {
-        name: "Vincent Léonie",
-        party: "Reunir / DVC",
-        color: "#ffd76e",
-        score: "",
-        slogan: "Réunir Limoges",
-      },
-      {
-        name: "Marie de Ferluc",
-        party: "Sans Étiquette",
-        color: "#cccccc",
-        score: "",
-        slogan: "Un nouveau printemps pour Limoges",
-      },
-      {
-        name: "Elisabeth Faucon",
-        party: "Lutte Ouvrière",
-        color: "#CC0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
+        name: "Émile R. Lombertie",
+        party: "DVD",
+        isMayor: true,
+        color: "#adc1fd",
+        score: "Retrait",
+        slogan: "Avec Lombertie, soyons fiers de Limoges",
       },
     ],
     polls: [
@@ -2406,26 +2353,51 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Émile R. Lombertie", party: "LR/DVD", score: "" },
+        { candidate: "Guillaume Guérin", party: "LR - DVD", score: "27,34%" },
+
+        {
+          candidate: "Damien Maudet",
+          party: "LFI - G.s - LÉ - DVG",
+          score: "24,86%",
+        },
         {
           candidate: "Thierry Miguel",
           party: "PS - PCF - PP - ADS - POC",
-          score: "",
+          score: "16,92%",
         },
+
+        { candidate: "Albin Freychet", party: "RN", score: "12,54%" },
+        { candidate: "Émile R. Lombertie", party: "LR/DVD", score: "10,05%" },
+
+        { candidate: "Vincent Léonie", party: "Reunir / DVC", score: "4,48%" },
+        { candidate: "Marie De Ferluc", party: "SE", score: "2,79%" },
+
+        {
+          candidate: "Elisabeth Faucon",
+          party: "Lutte Ouvrière",
+          score: "1,01%",
+        },
+        { candidate: "Participation", score: "58,78%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,42%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "1,34%" },
+      ],
+      tour2: [
+        { candidate: "Guillaume Guérin", party: "LR - DVD", score: "" },
+
         {
           candidate: "Damien Maudet",
           party: "LFI - G.s - LÉ - DVG",
           score: "",
         },
-        { candidate: "Guillaume Guérin", party: "LR - DVD", score: "" },
+        {
+          candidate: "Thierry Miguel",
+          party: "PS - PCF - PP - ADS - POC",
+          score: "",
+        },
+
         { candidate: "Albin Freychet", party: "RN", score: "" },
-        { candidate: "Vincent Léonie", party: "Reunir / DVC", score: "" },
-        { candidate: "Elisabeth Faucon", party: "Lutte Ouvrière", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Émile R. Lombertie", party: "LR/DVD", score: "Retrait" },
       ],
-      tour2: [],
     },
   },
   {
@@ -3549,22 +3521,23 @@ const citiesData = [
         name: "Jérôme Baloge",
         party: "Parti Radical / Re / Modem",
         isMayor: true,
+        isReelected: true,
         color: "#e195d4",
-        score: "",
+        score: "65,05%",
         slogan: "Niort, c'est tous ensemble!",
       },
       {
         name: "Sébastien Mathieu",
         party: "Union de la Gauche (DVG-LFI-PCF-PS-LÉ-G.s-GÉ-Pirate)",
         color: "#FF3333",
-        score: "",
+        score: "25,84%",
         slogan: "Niort à Gauche",
       },
       {
         name: "Céline Bonnet-Derisbourg",
         party: "RN",
         color: "#0D378A",
-        score: "",
+        score: "9,08%",
         slogan: "ENSEMBLE, osons le changement pour Niort",
       },
     ],
@@ -3590,17 +3563,17 @@ const citiesData = [
         {
           candidate: "Jérôme Baloge",
           party: "Parti Radical / Re / Modem",
-          score: "",
+          score: "65,08%",
         },
         {
           candidate: "Sébastien Mathieu",
           party: "Union de la Gauche (DVG-LFI-PCF-PS-LÉ-G.s-GÉ-Pirate)",
-          score: "",
+          score: "25,84%",
         },
-        { candidate: "Céline Bonnet-Derisbourg", party: "RN", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Céline Bonnet-Derisbourg", party: "RN", score: "9,08%" },
+        { candidate: "Participation", score: "55,49%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,95%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,74%" },
       ],
       tour2: [],
     },
@@ -4849,17 +4822,18 @@ const citiesData = [
         party: "SE",
         color: "#808080",
         isListSortante: true,
-        score: "",
+        isElected: true,
+        score: "100,00 %",
         slogan: "Agir ensemble pour notre commune",
       },
     ],
     polls: [],
     results2026: {
       tour1: [
-        { candidate: "Nathalie Lavillonniere", party: "SE", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Nathalie Lavillonniere", party: "SE", score: "100,00 %" },
+        { candidate: "Participation", score: "47,04 %" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "8" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "9" },
       ],
     },
   },
@@ -6661,7 +6635,7 @@ window.showCityDetails = function (cityName) {
       if (cand.isReelected) {
         mayorBadgeParts.push(`<span class="mayor-reelected">réélu(e)</span>`);
       } else if (cand.isElected) {
-        mayorBadgeParts.push(`<span class="mayor-elected">Maire élu(e)</span>`);
+        mayorBadgeParts.push(`<span class="mayor-elected">élu(e)</span>`);
       } else if (cand.isListElected) {
         mayorBadgeParts.push(`<span class="mayor-elected">Liste réélue</span>`);
       }
