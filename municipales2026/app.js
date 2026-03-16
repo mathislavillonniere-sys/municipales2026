@@ -34,25 +34,11 @@ const citiesData = [
         slogan: "Agir pour Aix",
       },
       {
-        name: "Julie Boronad",
-        party: "LFI",
-        color: "#cc2443",
-        score: "",
-        slogan: "Aix en commun",
-      },
-      {
         name: "Philippe Klein",
         party: "HOR",
         color: "#0a539c",
         score: "",
         slogan: "AIX POUR VOUS",
-      },
-      {
-        name: "Mounir Ben Ammar",
-        party: "REV",
-        color: "#77ff77",
-        score: "",
-        slogan: "Aix populaire et vivante",
       },
     ],
     polls: [
@@ -75,6 +61,22 @@ const citiesData = [
     },
     results2026: {
       tour1: [
+        { candidate: "Sophie Joissains", party: "UDI", score: "39,41%" },
+        {
+          candidate: "Marc Pena",
+          party: "PS - LÉ - PCF - G.s - PP - PO - GES - E!",
+          score: "20,15%",
+        },
+        { candidate: "Jean-Louis Geiger", party: "RN - UDR", score: "15,91%" },
+        { candidate: "Philippe Klein", party: "HOR", score: "11,80%" },
+
+        { candidate: "Julie Boronad", party: "LFI", score: "8,00%" },
+        { candidate: "Mounir Ben Ammar", party: "REV", score: "4,72%" },
+        { candidate: "Participation", score: "49,83%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,85%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,68%" },
+      ],
+      tour2: [
         { candidate: "Sophie Joissains", party: "UDI", score: "" },
         {
           candidate: "Marc Pena",
@@ -82,14 +84,11 @@ const citiesData = [
           score: "",
         },
         { candidate: "Jean-Louis Geiger", party: "RN - UDR", score: "" },
-        { candidate: "Julie Boronad", party: "LFI", score: "" },
         { candidate: "Philippe Klein", party: "HOR", score: "" },
-        { candidate: "Mounir Ben Ammar", party: "REV", score: "" },
         { candidate: "Participation", score: "" },
         { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -101,13 +100,6 @@ const citiesData = [
     mayorColor: "#fab622",
     candidates: [
       {
-        name: "Frédéric Fauvet",
-        party: "PS - LÉ - PCF - D! - PP - GÉ",
-        color: "#ff8080",
-        score: "",
-        slogan: "Pour Amiens en mieux, la Gauche unie, écologiste et citoyenne",
-      },
-      {
         name: "Hubert de Jenlis",
         party: "RE / LR / Horizons",
         isMayor: true,
@@ -115,6 +107,14 @@ const citiesData = [
         score: "",
         slogan: "Nous, les amiénois !",
       },
+      {
+        name: "Frédéric Fauvet",
+        party: "PS - LÉ - PCF - D! - PP - GÉ",
+        color: "#ff8080",
+        score: "",
+        slogan: "Pour Amiens en mieux, la Gauche unie, écologiste et citoyenne",
+      },
+
       {
         name: "Damien Toumi",
         party: "RN",
@@ -135,34 +135,6 @@ const citiesData = [
         color: "#cccccc",
         score: "",
         slogan: "AMIENS AU COEUR",
-      },
-      {
-        name: "Benoit Mercuzot",
-        party: "DVC",
-        color: "#ffd76e",
-        score: "",
-        slogan: "Réussir Amiens ensemble",
-      },
-      {
-        name: "Aurélien Caron",
-        party: "LR",
-        color: "#0066CC",
-        score: "",
-        slogan: "Amiens Ville d'Avenir",
-      },
-      {
-        name: "Paul-Éric Dècle",
-        party: "LC",
-        color: "#adc1fd",
-        score: "",
-        slogan: "Amiens au coeur",
-      },
-      {
-        name: "Jean-Patrick BAUDRY",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
       },
     ],
     polls: [
@@ -188,6 +160,29 @@ const citiesData = [
         {
           candidate: "Hubert de Jenlis",
           party: "RE / LR / Horizons",
+          score: "25,98%",
+        },
+        {
+          candidate: "Frédéric Fauvet",
+          party: "PS - LÉ - PP - GÉ - LRDG",
+          score: "23,98%",
+        },
+        { candidate: "Damien Toumi", party: "RN", score: "14,71%" },
+        { candidate: "Julia Bellina", party: "SE", score: "12,41%" },
+
+        { candidate: "Samy Olivier", party: "LFI", score: "9,70%" },
+        { candidate: "Aurélien Caron", party: "LR", score: "5,35%" },
+        { candidate: "Benoit Mercuzot", party: "DVC", score: "3,90%" },
+        { candidate: "Paul-Éric Dècle", party: "LC", score: "2,64%" },
+        { candidate: "Jean-Patrick BAUDRY", party: "LO", score: "1,35%" },
+        { candidate: "Participation", score: "49,40%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,08%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,59%" },
+      ],
+      tour2: [
+        {
+          candidate: "Hubert de Jenlis",
+          party: "RE / LR / Horizons",
           score: "",
         },
         {
@@ -196,17 +191,11 @@ const citiesData = [
           score: "",
         },
         { candidate: "Damien Toumi", party: "RN", score: "" },
-        { candidate: "Samy Olivier", party: "LFI", score: "" },
-        { candidate: "Aurélien Caron", party: "LR", score: "" },
-        { candidate: "Benoit Mercuzot", party: "DVC", score: "" },
-        { candidate: "Paul-Éric Dècle", party: "LC", score: "" },
         { candidate: "Julia Bellina", party: "SE", score: "" },
-        { candidate: "Jean-Patrick BAUDRY", party: "LO", score: "" },
         { candidate: "Participation", score: "" },
         { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -232,41 +221,6 @@ const citiesData = [
         score: "",
         slogan: "Demain Angers",
       },
-      {
-        name: "Aurore Lahondès",
-        party: "Rassemblement National",
-        color: "#0D378A",
-        score: "",
-        slogan: "Rassemblement pour Angers",
-      },
-      {
-        name: "Arash Saeidi",
-        party: "La France Insoumise",
-        color: "#cc2443",
-        score: "",
-        slogan: "ANGERS POPULAIRE",
-      },
-      {
-        name: "Valentin Rambault",
-        party: "DVC",
-        color: "#ffd76e",
-        score: "",
-        slogan: "Angers 2026",
-      },
-      {
-        name: "Céline L'Huillier",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
-      },
-      {
-        name: "Nicolas Cuisinier",
-        party: "NPA-R",
-        color: "#b71c1c",
-        score: "",
-        slogan: "NPA Révolutionnaires-ANGERS ouvrière et révolutionnaire",
-      },
     ],
     polls: [],
     results2020: {
@@ -290,26 +244,42 @@ const citiesData = [
     },
     results2026: {
       tour1: [
+        {
+          candidate: "Christophe Béchu",
+          party: "HOR - RE - MoDem",
+          score: "49,48%",
+        },
+        {
+          candidate: "Romain Laveau",
+          party: "LÉ - PCF - PS - PP - G.s - GRS",
+          score: "28,71%",
+        },
+        {
+          candidate: "Arash Saeidi",
+          party: "La France Insoumise",
+          score: "8,20%",
+        },
+
+        {
+          candidate: "Aurore Lahondès",
+          party: "Rassemblement National",
+          score: "7,92%",
+        },
+        { candidate: "Valentin Rambault", party: "DVC", score: "3,94%" },
+        { candidate: "Céline L'Huillier", party: "LO", score: "0,91%" },
+        { candidate: "Nicolas Cuisinier", party: "NPA-R", score: "0,84%" },
+        { candidate: "Participation", score: "53,49%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,93%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,62%" },
+      ],
+      tour2: [
         { candidate: "Christophe Béchu", party: "HOR - RE - MoDem", score: "" },
         {
           candidate: "Romain Laveau",
           party: "LÉ - PCF - PS - PP - G.s - GRS",
           score: "",
         },
-        {
-          candidate: "Aurore Lahondès",
-          party: "Rassemblement National",
-          score: "",
-        },
-        { candidate: "Arash Saeidi", party: "La France Insoumise", score: "" },
-        { candidate: "Valentin Rambault", party: "DVC", score: "" },
-        { candidate: "Céline L'Huillier", party: "LO", score: "" },
-        { candidate: "Nicolas Cuisinier", party: "NPA-R", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -343,27 +313,6 @@ const citiesData = [
         slogan: "L'union populaire Angoulême",
       },
       {
-        name: "Raphaël Manzanas",
-        party: "PS",
-        color: "#ff8080",
-        score: "",
-        slogan: "CHANGER LA VILLE",
-      },
-      {
-        name: "Patrick Mardikian",
-        party: "PS",
-        color: "#ff8080",
-        score: "",
-        slogan: "CHOISISSONS ANGOULEME AVEC PATRICK MARDIKIAN",
-      },
-      {
-        name: "Jean-Christophe Compain",
-        party: "REC",
-        color: "#13151d",
-        score: "",
-        slogan: "Agir Pour Angoulême",
-      },
-      {
         name: "Vincent You",
         party: "DVD",
         color: "#adc1fd",
@@ -371,18 +320,11 @@ const citiesData = [
         slogan: "ANGOULEME VOUS AIME",
       },
       {
-        name: "Jesse Betruille",
-        party: "RN",
-        color: "#0d378a",
+        name: "Patrick Mardikian",
+        party: "PS",
+        color: "#ff8080",
         score: "",
-        slogan: "REDESSINONS ANGOULÊME",
-      },
-      {
-        name: "Olivier Nicolas",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
+        slogan: "CHOISISSONS ANGOULEME AVEC PATRICK MARDIKIAN",
       },
     ],
     polls: [],
@@ -398,26 +340,27 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Xavier Bonnefont", party: "HOR - RE", score: "" },
-        {
-          candidate: "Christophe Duhoux-Salaberry",
-          party: "LÉ - DVG",
-          score: "",
-        },
+        { candidate: "Xavier Bonnefont", party: "HOR - RE", score: "27,76%" },
+
         {
           candidate: "Anne-Aziliz Petit-Louboutin",
           party: "LFI-PCF-DVG",
-          score: "",
+          score: "17,82%",
         },
-        { candidate: "Raphaël Manzanas", party: "PS", score: "" },
-        { candidate: "Patrick Mardikian", party: "PS", score: "" },
-        { candidate: "Jean-Christophe Compain", party: "REC", score: "" },
-        { candidate: "Vincent You", party: "DVD", score: "" },
-        { candidate: "Jesse Betruille", party: "RN", score: "" },
-        { candidate: "Olivier Nicolas", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Vincent You", party: "DVD", score: "16,58%" },
+        {
+          candidate: "Christophe Duhoux-Salaberry",
+          party: "LÉ - DVG",
+          score: "10,45%",
+        },
+        { candidate: "Patrick Mardikian", party: "PS", score: "12,82%" },
+        { candidate: "Jesse Betruille", party: "RN", score: "7,07%" },
+        { candidate: "Raphaël Manzanas", party: "PS", score: "4,95%" },
+        { candidate: "Jean-Christophe Compain", party: "REC", score: "1,50%" },
+        { candidate: "Olivier Nicolas", party: "LO", score: "1,06%" },
+        { candidate: "Participation", score: "52,10%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,83%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,82%" },
       ],
       tour2: [],
     },
@@ -458,20 +401,6 @@ const citiesData = [
         score: "",
         slogan: "Retrouvons Annecy",
       },
-      {
-        name: "Vincent Drême",
-        party: "LFI",
-        color: "#cc2443",
-        score: "",
-        slogan: "L'Avenir en Commune",
-      },
-      {
-        name: "Naci Yildirim",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
-      },
     ],
     polls: [
       {
@@ -493,7 +422,26 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "François Astorg", party: "EELV", score: "" },
+        {
+          candidate: "Antoine Armand",
+          party: "RE - LR - HOR - PRV - LC",
+          score: "34,78%",
+        },
+        {
+          candidate: "Alexandre Mulatier-Gachet",
+          party: "DVG - PS - LÉ - PCF - PP",
+          score: "24,70%",
+        },
+        { candidate: "Jean-Luc RIGAUT", party: "DVD", score: "21,29%" },
+
+        { candidate: "Guillaume Roit-Lévêque", party: "RN", score: "13,65%" },
+        { candidate: "Vincent Drême", party: "LFI", score: "4,67%" },
+        { candidate: "Naci Yildirim", party: "LO", score: "0,90%" },
+        { candidate: "Participation", score: "56,61%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,90%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,57%" },
+      ],
+      tour2: [
         {
           candidate: "Antoine Armand",
           party: "RE - LR - HOR - PRV - LC",
@@ -504,14 +452,10 @@ const citiesData = [
           party: "DVG - PS - LÉ - PCF - PP",
           score: "",
         },
+        { candidate: "Jean-Luc RIGAUT", party: "DVD", score: "" },
+
         { candidate: "Guillaume Roit-Lévêque", party: "RN", score: "" },
-        { candidate: "Vincent Drême", party: "LFI", score: "" },
-        { candidate: "Naci Yildirim", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
