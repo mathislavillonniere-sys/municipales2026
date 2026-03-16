@@ -490,32 +490,11 @@ const citiesData = [
         slogan: "DONNONS UN AVENIR À ARGENTEUIL",
       },
       {
-        name: "Franck Debeaud",
-        party: "VIA",
-        color: "#0055aa",
-        score: "",
-        slogan: "Ensemble, rassemblés pour Argenteuil",
-      },
-      {
         name: "Yassin Zeghli",
         party: "LFI",
         color: "#cc2443",
         score: "",
         slogan: "Nous, les Argenteuillais.es",
-      },
-      {
-        name: "Nadir Slifi",
-        party: "Divers",
-        color: "#cccccc",
-        score: "",
-        slogan: "Argenteuil notre ville, notre avenir",
-      },
-      {
-        name: "Dominique Mariette",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
       },
     ],
     polls: [],
@@ -531,20 +510,20 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Georges Mothron", party: "LR", score: "" },
+        { candidate: "Georges Mothron", party: "LR", score: "30,77%" },
+        { candidate: "Yassin Zeghli", party: "LFI", score: "26,53%" },
+        { candidate: "Philippe Doucet", party: "DVG", score: "13,00%" },
         {
           candidate: "Nicolas Bougeard",
           party: "PS - PCF - G.s - PP - L'A - GRS - MRC - LÉ diss.",
-          score: "",
+          score: "12,54%",
         },
-        { candidate: "Philippe Doucet", party: "DVG", score: "" },
-        { candidate: "Franck Debeaud", party: "VIA", score: "" },
-        { candidate: "Yassin Zeghli", party: "LFI", score: "" },
-        { candidate: "Nadir Slifi", party: "Divers", score: "" },
-        { candidate: "Dominique Mariette", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Franck Debeaud", party: "VIA", score: "6,17%" },
+        { candidate: "Nadir Slifi", party: "Divers", score: "2,30%" },
+        { candidate: "Dominique Mariette", party: "LO", score: "1,60%" },
+        { candidate: "Participation", score: "42,50%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,41%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,90%" },
       ],
       tour2: [],
     },
@@ -586,42 +565,28 @@ const citiesData = [
         score: "",
         slogan: "Faire mieux pour Avignon",
       },
-      {
-        name: "Stephan Fiori",
-        party: "DVD",
-        color: "#adc1fd",
-        score: "",
-        slogan: "Entreprendre pour Avignon",
-      },
-      {
-        name: "Stéphane Geslin",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan:
-          "Liste ouvrière et jeune pour la défense des intérêts de la population et des services publics",
-      },
     ],
     polls: [],
     results2026: {
       tour1: [
-        { candidate: "Georges Mothron", party: "LR", score: "" },
+        { candidate: "Georges Mothron", party: "LR", score: "27,04%" },
+
+        { candidate: "Anne-Sophie Rigault", party: "RN", score: "25,52%" },
         {
-          candidate: "Nicolas Bougeard",
+          candidate: "David Fournier",
           party: "PS - PCF - G.s - PP - L'A - GRS - MRC - LÉ diss.",
-          score: "",
+          score: "19,89%",
         },
-        { candidate: "Anne-Sophie Rigault", party: "RN", score: "" },
         {
           candidate: "Mathilde Louvain",
           party: "LFI - PCF - G.s - AC",
-          score: "",
+          score: "19,03%",
         },
-        { candidate: "Stephan Fiori", party: "DVD", score: "" },
-        { candidate: "Stéphane Geslin", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Stephan Fiori", party: "DVD", score: "7,39%" },
+        { candidate: "Stéphane Geslin", party: "LO", score: "1,14%" },
+        { candidate: "Participation", score: "47,66%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,09%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,55%" },
       ],
       tour2: [],
     },
@@ -652,33 +617,11 @@ const citiesData = [
         slogan: "Ensemble Besançon avance",
       },
       {
-        name: "Éric Delabrousse",
-        party: "HOR - RE - PR",
-        color: "#1d06e7",
-        score: "",
-        slogan: "Besançon mérite mieux",
-      },
-      {
         name: "Séverine Véziès",
         party: "LFI",
         color: "#cc2443",
         score: "",
         slogan: "Faire mieux pour Besançon",
-      },
-      {
-        name: "Jacques Ricciardetti",
-        party: "RN - UDR - DLF - IL",
-        color: "#0d378a",
-        score: "",
-        slogan: "Changeons Besançon",
-      },
-      {
-        name: "Nicole Friess",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan:
-          "Lutte ouvrière - Le camp des travailleurs - Besançon en commun",
       },
     ],
     polls: [],
@@ -696,19 +639,23 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Anne Vignot", party: "EELV", score: "" },
-        { candidate: "Ludovic Fagaut", party: "LR - Modem", score: "" },
-        { candidate: "Éric Delabrousse", party: "HOR - RE - PR", score: "" },
-        { candidate: "Séverine Véziès", party: "LFI", score: "" },
+        { candidate: "Anne Vignot", party: "EELV", score: "40,13%" },
+        { candidate: "Ludovic Fagaut", party: "LR - Modem", score: "33,37%" },
+        {
+          candidate: "Éric Delabrousse",
+          party: "HOR - RE - PR",
+          score: "5,67%",
+        },
+        { candidate: "Séverine Véziès", party: "LFI", score: "10,90%" },
         {
           candidate: "Jacques Ricciardetti",
           party: "RN - UDR - DLF - IL",
-          score: "",
+          score: "8,00%",
         },
-        { candidate: "Nicole Friess", party: "LO", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Nicole Friess", party: "LO", score: "1,90%" },
+        { candidate: "Participation", score: "57,14%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,08%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,80%" },
       ],
       tour2: [],
     },
@@ -723,38 +670,40 @@ const citiesData = [
     candidates: [
       {
         name: "Robert Ménard",
-        party: "DVD",
+        party: "DVD / DVEXD",
         isMayor: true,
+        isReelected: true,
         color: "#adc1fd",
-        score: "",
+        score: "65,60%",
         slogan: "CHOISIR BÉZIERS",
-      },
-      {
-        name: "Thierry Antoine",
-        party: "LÉ - PS - PCF - PRG - PP - G.s - L'A - POC - G!",
-        color: "#00c000",
-        score: "",
-        slogan: "Le Printemps de Béziers",
-      },
-      {
-        name: "Julien Gabarron",
-        party: "RN",
-        color: "#0d378a",
-        score: "",
-        slogan: "Béziers ensemble !",
       },
       {
         name: "Thierry Mathieu",
         party: "DVC",
         color: "#ffd76e",
-        score: "",
+        score: "15,24%",
         slogan: "Rassembler Béziers",
       },
+      {
+        name: "Julien Gabarron",
+        party: "RN",
+        color: "#0d378a",
+        score: "8,97%",
+        slogan: "Béziers ensemble !",
+      },
+      {
+        name: "Thierry Antoine",
+        party: "LÉ - PS - PCF - PRG - PP - G.s - L'A - POC - G!",
+        color: "#00c000",
+        score: "6,52%",
+        slogan: "Le Printemps de Béziers",
+      },
+
       {
         name: "David Ocard",
         party: "LFI",
         color: "#cc2443",
-        score: "",
+        score: "3,66%",
         slogan: "Béziers unie et populaire",
       },
     ],
@@ -776,20 +725,19 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        { candidate: "Robert Ménard", party: "DVD", score: "" },
+        { candidate: "Robert Ménard", party: "DVD", score: "65,60%" },
+        { candidate: "Thierry Mathieu", party: "DVC", score: "15,24%" },
+        { candidate: "Julien Gabarron", party: "RN", score: "8,97%" },
         {
           candidate: "Thierry Antoine",
           party: "LÉ - PS - PCF - PRG - PP - G.s - L'A - POC - G!",
-          score: "",
+          score: "6,52%",
         },
-        { candidate: "Julien Gabarron", party: "RN", score: "" },
-        { candidate: "Thierry Mathieu", party: "DVC", score: "" },
-        { candidate: "David Ocard", party: "LFI", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "David Ocard", party: "LFI", score: "3,66%" },
+        { candidate: "Participation", score: "56,43%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,77%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,71%" },
       ],
-      tour2: [],
     },
   },
   {
@@ -822,62 +770,6 @@ const citiesData = [
         score: "",
         slogan: "Philippe Dessertine - L'optimisme est une force",
       },
-      {
-        name: "Nordine Raymond",
-        party: "LFI - CB - PG - REV",
-        color: "#cc2443",
-        score: "",
-        slogan: "Faire mieux pour Bordeaux",
-      },
-      {
-        name: "Julie Rechagneux",
-        party: "RN",
-        color: "#0d378a",
-        score: "",
-        slogan: "Remettre Bordeaux en ordre",
-      },
-      {
-        name: "Philippe Poutou",
-        party: "NPA-A",
-        color: "#CC0000",
-        score: "",
-        slogan: "Rouge Bordeaux anticapitaliste",
-      },
-      {
-        name: "Virginie Bonthoux Tournay",
-        party: "REC",
-        color: "#13151d",
-        score: "",
-        slogan: "À la reconquête de Bordeaux",
-      },
-      {
-        name: "Fanny Quandalle",
-        party: "LO",
-        color: "#CC0000",
-        score: "",
-        slogan: "Lutte ouvrière - Le camp des travailleurs",
-      },
-      {
-        name: "Medhi Saboulard",
-        party: "DVG",
-        color: "#ffc0c0",
-        score: "",
-        slogan: "Union de la gauche",
-      },
-      {
-        name: "Esteban Nadal",
-        party: "NPA-R",
-        color: "#CC0000",
-        score: "",
-        slogan: "NPA Révolutionnaires - Bordeaux ouvrière et révolutionnaire",
-      },
-      {
-        name: "Petra Bernus",
-        party: "RP",
-        color: "#CC0000",
-        score: "",
-        slogan: "Arracher Bordeaux aux riches et aux spéculateurs",
-      },
     ],
     polls: [
       {
@@ -900,30 +792,42 @@ const citiesData = [
     },
     results2026: {
       tour1: [
+        { candidate: "Pierre Hurmic", party: "EELV", score: "27,68%" },
+        {
+          candidate: "Thomas Cazenave",
+          party: "RE / LR / Horizons / Modem / UDI",
+          score: "25,58%",
+        },
+        { candidate: "Philippe Dessertine", party: "DVC", score: "20,20%" },
+        {
+          candidate: "Nordine Raymond",
+          party: "LFI - CB - PG - REV",
+          score: "9,36%",
+        },
+        { candidate: "Julie Rechagneux", party: "RN", score: "7,02%" },
+        { candidate: "Philippe Poutou", party: "NPA", score: "5,14%" },
+        { candidate: "Medhi Saboulard", party: "DVG", score: "1,79%" },
+        {
+          candidate: "Virginie Bonthoux Tournay",
+          party: "REC",
+          score: "1,77%",
+        },
+        { candidate: "Petra Bernus", party: "RP", score: "0,89%" },
+        { candidate: "Fanny Quandalle", party: "LO", score: "0,36%" },
+        { candidate: "Esteban Nadal", party: "NPA-R", score: "0,21%" },
+        { candidate: "Participation", score: "58,08%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,68%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,35%" },
+      ],
+      tour2: [
         { candidate: "Pierre Hurmic", party: "EELV", score: "" },
         {
           candidate: "Thomas Cazenave",
           party: "RE / LR / Horizons / Modem / UDI",
           score: "",
         },
-        { candidate: "Julie Rechagneux", party: "RN", score: "" },
-        { candidate: "Philippe Poutou", party: "NPA", score: "" },
-        {
-          candidate: "Nordine Raymond",
-          party: "LFI - CB - PG - REV",
-          score: "",
-        },
         { candidate: "Philippe Dessertine", party: "DVC", score: "" },
-        { candidate: "Virginie Bonthoux Tournay", party: "REC", score: "" },
-        { candidate: "Fanny Quandalle", party: "LO", score: "" },
-        { candidate: "Medhi Saboulard", party: "DVG", score: "" },
-        { candidate: "Esteban Nadal", party: "NPA-R", score: "" },
-        { candidate: "Petra Bernus", party: "RP", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -6701,21 +6605,26 @@ window.showCityDetails = function (cityName) {
         score: "",
       }));
       // Par défaut on laisse le 2nd tour à vide (inconnu) — l'UI affichera "À déterminer"
-      const tour2 = [];
-      results2026 = { tour1, tour2 };
+      // const tour2 = [];
+      // results2026 = { tour1, tour2 };
     }
-
-    resHtml += `<h3>Résultats 2026</h3>`;
-    resHtml += `<div style="display:flex; gap:20px; flex-wrap:wrap;">`;
-    resHtml +=
-      `<div style="flex:1; min-width:250px;">` +
-      makeTable("1er Tour — Candidats", results2026.tour1) +
-      `</div>`;
-    resHtml +=
-      `<div style="flex:1; min-width:250px;">` +
-      makeTable("2nd Tour — À déterminer", results2026.tour2) +
-      `</div>`;
-    resHtml += `</div>`;
+    if (city.results2020) {
+      resHtml += `<h3>Résultats 2026</h3>`;
+      resHtml += `<div style="display:flex; gap:20px; flex-wrap:wrap;">`;
+      if (city.results2026.tour1) {
+        resHtml +=
+          `<div style="flex:1; min-width:250px;">` +
+          makeTable("1er Tour", city.results2026.tour1) +
+          `</div>`;
+      }
+      if (city.results2026.tour2 && city.results2026.tour2.length > 0) {
+        resHtml +=
+          `<div style="flex:1; min-width:250px;">` +
+          makeTable("2nd Tour", city.results2026.tour2) +
+          `</div>`;
+      }
+      resHtml += `</div>`;
+    }
 
     resultsWrapper.innerHTML = resHtml;
   }
