@@ -3560,55 +3560,51 @@ const citiesData = [
         score: "",
         slogan: "Pour Reims, une nouvelle ère",
       },
-      {
-        name: "Patricia Coradel",
-        party: "LFI",
-        color: "#cc2443",
-        score: "",
-        slogan: "Reims Insoumise",
-      },
-      {
-        name: "Sébastien Mura",
-        party: "DVG",
-        color: "#ffc0c0",
-        score: "",
-        slogan: "Nous c'est Reims",
-      },
-      {
-        name: "Stéphane Lang",
-        party: "LR Diss.",
-        color: "#adc1fd",
-        score: "",
-        slogan:
-          "Les Rémois au cœur - Liste d'union de la droite, du centre et des indépendants",
-      },
-      {
-        name: "Thomas Rose",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - Faire entendre le camp des travailleurs",
-      },
     ],
     polls: [],
     results2026: {
       tour1: [
-        { candidate: "Arnaud Robinet", party: "HOR - LR - RE", score: "" },
+        {
+          candidate: "Arnaud Robinet",
+          party: "HOR - LR - RE",
+          score: "43,79%",
+        },
+
+        { candidate: "Anne-Sophie Frigou", party: "RN - LAF", score: "21,03%" },
+        {
+          candidate: "Éric Quénard",
+          party: "PS - LÉ - PCF - G·s - L'AP - PP - GÉ - LRDG",
+          score: "17,97%",
+        },
+        { candidate: "Stéphane Lang", party: "LR Diss.", score: "7,68%" },
+        { candidate: "Patricia Coradel", party: "LFI", score: "6,88%" },
+        { candidate: "Sébastien Mura", party: "DVG", score: "1,06%" },
+        { candidate: "Thomas Rose", party: "LO", score: "1,60%" },
+        { candidate: "Participation", score: "45,57%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,94%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,69%" },
+      ],
+      tour2: [
+        {
+          candidate: "Arnaud Robinet",
+          party: "HOR - LR - RE",
+          score: "%",
+        },
+
+        {
+          candidate: "Anne-Sophie Frigou",
+          party: "RN - LAF / LR Diss.",
+          score: "",
+        },
         {
           candidate: "Éric Quénard",
           party: "PS - LÉ - PCF - G·s - L'AP - PP - GÉ - LRDG",
           score: "",
         },
-        { candidate: "Anne-Sophie Frigou", party: "RN - LAF", score: "" },
-        { candidate: "Patricia Coradel", party: "LFI", score: "" },
-        { candidate: "Sébastien Mura", party: "DVG", score: "" },
-        { candidate: "Stéphane Lang", party: "LR Diss.", score: "" },
-        { candidate: "Thomas Rose", party: "LO", score: "" },
         { candidate: "Participation", score: "" },
         { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -3640,64 +3636,6 @@ const citiesData = [
         color: "#1d06e7",
         score: "",
         slogan: "Vivre rennes",
-      },
-      {
-        name: "Thomas Rousseau",
-        party: "LR - LC - ÉAC",
-        color: "#0066cc",
-        score: "",
-        slogan: "L'éspoir Rennais",
-      },
-      {
-        name: "Julien Masson",
-        party: "RN - UDR",
-        color: "#0D378A",
-        score: "",
-        slogan: "L'éspoir Rennais",
-      },
-      {
-        name: "Ulysse Rabaté",
-        party: "LFI Diss.",
-        color: "#cf2e4d",
-        score: "",
-        slogan: "Rennes Commune",
-      },
-      {
-        name: "Yan Mélan",
-        party: "ÉQX",
-        color: "#77ff77",
-        score: "",
-        slogan: "Rennes Commune",
-      },
-      {
-        name: "Erell Duclos",
-        party: "RP",
-        color: "#bb0000",
-        score: "",
-        slogan:
-          "Révolution permanente : Reprendre Rennes aux politicien professionels",
-      },
-      {
-        name: "Sandra Chirazi",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - le camp des travailleurs",
-      },
-      {
-        name: "Victor Darcissac",
-        party: "NPA -R",
-        color: "#bb0000",
-        score: "",
-        slogan: "NPA Révolutionnaire - Rennes ouvrière et révolutionaire",
-      },
-      {
-        name: "Morgane Pernot Goarvot",
-        party: "PT",
-        color: "#bb0000",
-        score: "",
-        slogan:
-          "Rennes contre la guerre, pour les travailleurs.es, la jeunesse et les services public",
       },
     ],
     polls: [
@@ -3741,32 +3679,54 @@ const citiesData = [
         {
           candidate: "Nathalie Appéré",
           party: "PS - LÉ - PCF - UDB - ND - G.s - L'A - D! - PP - PR",
-          score: "",
-        },
-        {
-          candidate: "Marie Mesmeur",
-          party: "LFI",
-          score: "",
+          score: "34,53%",
         },
         {
           candidate: "Charles Compagnon",
           party: "HOR - RE - MoDem - UDI - NÉ - DP - PB",
-          score: "",
+          score: "22,47%",
         },
-        { candidate: "Thomas Rousseau", party: "LR - LC - ÉAC", score: "" },
-        { candidate: "Julien Masson", party: "RN - UDR", score: "" },
-        { candidate: "Ulysse Rabaté", party: "LFI Diss.", score: "" },
-        { candidate: "Yan Mélan", party: "ÉQX", score: "" },
-        { candidate: "Erell Duclos", party: "RP", score: "" },
-        { candidate: "Sandra Chirazi", party: "LO", score: "" },
-
-        { candidate: "Victor Darcissac", party: "NPA -R", score: "" },
-        { candidate: "Morgane Pernot Goarvot", party: "PT", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        {
+          candidate: "Marie Mesmeur",
+          party: "LFI",
+          score: "18,61%",
+        },
+        { candidate: "Julien Masson", party: "RN - UDR", score: "6,67%" },
+        {
+          candidate: "Thomas Rousseau",
+          party: "LR - LC - ÉAC",
+          score: "6,30%",
+        },
+        { candidate: "Ulysse Rabaté", party: "LFI Diss.", score: "5,07%" },
+        { candidate: "Yan Mélan", party: "ÉQX", score: "2,90%" },
+        { candidate: "Erell Duclos", party: "RP", score: "1,75%" },
+        { candidate: "Sandra Chirazi", party: "LO", score: "0,88%" },
+        { candidate: "Victor Darcissac", party: "NPA -R", score: "0,51%" },
+        { candidate: "Morgane Pernot Goarvot", party: "PT", score: "0,29%" },
+        { candidate: "Participation", score: "58,28%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,95%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,62%" },
       ],
-      tour2: [],
+      tour2: [
+        {
+          candidate: "Nathalie Appéré",
+          party: "PS - LÉ - PCF - UDB - ND - G.s - L'A - D! - PP - PR",
+          score: "34,53%",
+        },
+        {
+          candidate: "Charles Compagnon",
+          party: "HOR - RE - MoDem - UDI - NÉ - DP - PB",
+          score: "22,47%",
+        },
+        {
+          candidate: "Marie Mesmeur",
+          party: "LFI",
+          score: "18,61%",
+        },
+        { candidate: "Participation", score: "58,28%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "0,95%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,62%" },
+      ],
     },
   },
   {
@@ -3807,20 +3767,6 @@ const citiesData = [
         score: "",
         slogan: "Redresser Roubaix ensemble",
       },
-      {
-        name: "Nacim Zeghlache-Salhi",
-        party: "DIV",
-        color: "#cccccc",
-        score: "",
-        slogan: "Pour Roubaix",
-      },
-      {
-        name: "Francoise Delbarre",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Lutte ouvrière - le camp des travailleurs",
-      },
     ],
     polls: [
       {
@@ -3851,6 +3797,35 @@ const citiesData = [
     results2026: {
       tour1: [
         {
+          candidate: "David Guiraud",
+          party: "LFI",
+          score: "46,64%",
+        },
+        {
+          candidate: "Alexandre Garcin",
+          party: "DVD",
+          score: "20,09%",
+        },
+        {
+          candidate: "Karim Amrouni",
+          party: "DVG - LE - PCF - PRG - PS - PP",
+          score: "16,76%",
+        },
+
+        { candidate: "Céline Sayah", party: "RN / DLF", score: "11,87%" },
+        { candidate: "Nacim Zeghlache-Salhi", party: "DIV", score: "3,60%" },
+        { candidate: "Francoise Delbarre", party: "LO", score: "1,05%" },
+        { candidate: "Participation", score: "37,62%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,05%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,92%" },
+      ],
+      tour2: [
+        {
+          candidate: "David Guiraud",
+          party: "LFI",
+          score: "",
+        },
+        {
           candidate: "Alexandre Garcin",
           party: "DVD",
           score: "",
@@ -3860,19 +3835,11 @@ const citiesData = [
           party: "DVG - LE - PCF - PRG - PS - PP",
           score: "",
         },
-        {
-          candidate: "David Guiraud",
-          party: "LFI",
-          score: "",
-        },
         { candidate: "Céline Sayah", party: "RN / DLF", score: "" },
-        { candidate: "Francoise Delbarre", party: "LO", score: "" },
-        { candidate: "Nacim Zeghlache-Salhi", party: "DIV", score: "" },
         { candidate: "Participation", score: "" },
         { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
       ],
-      tour2: [],
     },
   },
   {
@@ -3912,27 +3879,6 @@ const citiesData = [
         score: "",
         slogan: "Rouen Conquérante",
       },
-      {
-        name: "Éric Moisan",
-        party: "LO",
-        color: "#bb0000",
-        score: "",
-        slogan: "Réussir Rouen",
-      },
-      {
-        name: "Amaury Renauld",
-        party: "NPA-R",
-        color: "#bb0000",
-        score: "",
-        slogan: "NPA-Révolutionnaires - Rouen ouvrière & révolutionnaire",
-      },
-      {
-        name: "Céline Vitard",
-        party: "PT",
-        color: "#bb0000",
-        score: "",
-        slogan: "Liste ouvrière pour la rupture avec la politique de Macron",
-      },
     ],
     polls: [],
     results2020: {
@@ -3951,6 +3897,26 @@ const citiesData = [
         {
           candidate: "Nicolas Mayer-Rossignol",
           party: "PS - LÉ - G.s - PCF - PP - GRS",
+          score: "45,13%",
+        },
+        {
+          candidate: "Marine Caron",
+          party: "HOR - MoDem - RE - PRV - LR",
+          score: "24,76%",
+        },
+        { candidate: "Maxime Da Silva", party: "LFI", score: "14,04%" },
+        { candidate: "Grégoire Houdan", party: "RN / UDR", score: "13,30%" },
+        { candidate: "Amaury Renauld", party: "NPA-R", score: "1,12%" },
+        { candidate: "Éric Moisan", party: "LO", score: "0,96%" },
+        { candidate: "Céline Vitard", party: "PT", score: "0,68%" },
+        { candidate: "Participation", score: "50,71%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,02%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,60%" },
+      ],
+      tour2: [
+        {
+          candidate: "Nicolas Mayer-Rossignol",
+          party: "PS - LÉ - G.s - PCF - PP - GRS",
           score: "",
         },
         {
@@ -3960,14 +3926,10 @@ const citiesData = [
         },
         { candidate: "Maxime Da Silva", party: "LFI", score: "" },
         { candidate: "Grégoire Houdan", party: "RN / UDR", score: "" },
-        { candidate: "Éric Moisan", party: "LO", score: "" },
-        { candidate: "Amaury Renauld", party: "NPA-R", score: "" },
-        { candidate: "Céline Vitard", party: "PT", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Participation", score: "50,71%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,02%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,60%" },
       ],
-      tour2: [],
     },
   },
 
@@ -3982,54 +3944,48 @@ const citiesData = [
     mayorColor: "#ff8080",
     candidates: [
       {
+        name: "Bally Bagayoko",
+        party: "LFI - PCF",
+        color: "#cc2443",
+        isElected: true,
+        score: "50,77%",
+        slogan: "Ensemble, retrouvons l'espoir",
+      },
+      {
         name: "Mathieu Hanotin",
         party: "PS - LÉ - G.s - PA - GRS - PP",
         isMayor: true,
         color: "#ff8080",
-        score: "",
+        score: "32,70%",
         slogan: "Réussir ensemble",
-      },
-      {
-        name: "Bally Bagayoko",
-        party: "LFI - PCF",
-        color: "#cc2443",
-        score: "",
-        slogan: "Ensemble, retrouvons l'espoir",
-      },
-      {
-        name: "Quentin Gutierrez",
-        party: "DVC - HOR - LR - RE",
-        color: "#ffd76e",
-        score: "",
-        slogan: "A.G.I.R pour Saint-Denis !",
       },
       {
         name: "Pascal Kouppé de Kermartin",
         party: "UDI",
         color: "#66ccff",
-        score: "",
+        score: "3,54%",
         slogan: "Changer Saint-Denis Pierrefitte",
       },
+      {
+        name: "Quentin Gutierrez",
+        party: "DVC - HOR - LR - RE",
+        color: "#ffd76e",
+        score: "3,45%",
+        slogan: "A.G.I.R pour Saint-Denis !",
+      },
+
       {
         name: "Agnès Renaud",
         party: "LO",
         color: "#bb0000",
-        score: "",
+        score: "1,50%",
         slogan: "Lutte ouvrière - Faire entendre le camp des travailleurs",
-      },
-      {
-        name: "Elsa Marcel",
-        party: "RP",
-        color: "#bb0000",
-        score: "",
-        slogan:
-          "Reprendre Saint-Denis Pierrefitte aux politiciens professionnels",
       },
       {
         name: "Jérémie Daire",
         party: "PT",
         color: "#bb0000",
-        score: "",
+        score: "0,91%",
         slogan: "Saint-Denis 100% Service public",
       },
     ],
@@ -4056,26 +4012,10 @@ const citiesData = [
     },
     results2026: {
       tour1: [
-        {
-          candidate: "Mathieu Hanotin",
-          party: "PS - LÉ - G.s - PA - GRS - PP",
-          score: "",
-        },
-        { candidate: "Bally Bagayoko", party: "LFI - PCF", score: "" },
-        {
-          candidate: "Quentin Gutierrez",
-          party: "DVC - HOR - LR - RE",
-          score: "",
-        },
-        { candidate: "Pascal Kouppé de Kermartin", party: "UDI", score: "" },
-        { candidate: "Agnès Renaud", party: "LO", score: "" },
-        { candidate: "Elsa Marcel", party: "RP", score: "" },
-        { candidate: "Jérémie Daire", party: "PT", score: "" },
-        { candidate: "Participation", score: "" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
-        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+        { candidate: "Participation", score: "42,84%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,67%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "1,17%" },
       ],
-      tour2: [],
     },
   },
   {
@@ -5629,10 +5569,6 @@ document.addEventListener("DOMContentLoaded", () => {
               );
             } else if (cand.isElected) {
               mayorBadgeParts.push(`<span class="mayor-elected">élu(e)</span>`);
-            } else if (cand.isListElected) {
-              mayorBadgeParts.push(
-                `<span class="mayor-elected">Liste réélue</span>`,
-              );
             }
             const mayorBadge = mayorBadgeParts.length
               ? " " + mayorBadgeParts.join(" ")
