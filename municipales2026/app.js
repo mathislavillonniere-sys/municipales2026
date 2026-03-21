@@ -2062,6 +2062,103 @@ const citiesData = [
     },
   },
   {
+    name: "Lorient",
+    coords: [47.7483, -3.3667],
+    population: 58329,
+    interco: "Lorient Agglomération",
+    mayor: "Fabrice Loher (UDI)",
+    mayorColor: "#66ccff", // EELV
+    candidates: [
+      {
+        name: "Damien Girard",
+        party: "LÉ-PCF-L'AP-D!-ND / PS-PP-PRG-UDB",
+        color: "#00C000",
+        score: "",
+        slogan: "Lorient en commun",
+      },
+      {
+        name: "Fabrice Loher",
+        party: "UDI-RE-D&P-MoDem-HOR-LR",
+        isMayor: true,
+        color: "#66ccff",
+        score: "",
+        slogan: "Nous Lorientais",
+      },
+      {
+        name: "Théo Thomas",
+        party: "RN-UDR-RPR-L'AF",
+        color: "#0d378a",
+        score: "",
+        slogan: "Rassembler Lorient",
+      },
+    ],
+    results2020: {
+      tour1: [
+        { candidate: "D. Girard", party: "EÉLV-PS-PCF-UDB", score: "22,99%" },
+        { candidate: "F. Loher", party: "UDI", score: "20,82%" },
+        { candidate: "B. Blanchard", party: "diss.PS", score: "18,45%" },
+      ],
+      tour2: [
+        { candidate: "F. Loher", party: "UDI", score: "35,34%" },
+        { candidate: "D. Girard", party: "EÉLV-PS-PCF-UDB", score: "32,83%" },
+        { candidate: "B. Blanchard", party: "diss.PS", score: "19,55%" },
+      ],
+    },
+    results2026: {
+      tour1: [
+        {
+          candidate: "Fabrice Loher",
+          party: "UDI",
+          score: "35,44%",
+        },
+        {
+          candidate: "Damien Girard",
+          party: "LÉ-PCF-L'AP-D!-ND",
+          score: "23,19%",
+        },
+        {
+          candidate: "Gaëlle Le Stradic",
+          party: "PS-PP-PRG-UDB",
+          score: "19,03%",
+        },
+        {
+          candidate: "Théo Thomas",
+          party: "RN-UDR-RPR-L'AF",
+          score: "15,81%",
+        },
+        {
+          candidate: "Vincent Le Tertre",
+          party: "LFI-PG-PEPS-REV",
+          score: "5,19%",
+        },
+        { candidate: "Blandine Pierron", party: "LO", score: "1,37%" },
+        { candidate: "Participation", score: "55,37%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,03%" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,67%" },
+      ],
+      tour2: [
+        {
+          candidate: "Fabrice Loher",
+          party: "UDI",
+          score: "",
+        },
+        {
+          candidate: "Damien Girard",
+          party: "LÉ-PCF-L'AP-D!-ND / PS-PP-PRG-UDB",
+          score: "",
+        },
+        {
+          candidate: "Théo Thomas",
+          party: "RN-UDR-RPR-L'AF",
+          score: "15,81%",
+        },
+        { candidate: "Participation", score: "" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "" },
+        { candidate: "Vote Nul", party: "Non comptabilisé", score: "" },
+      ],
+    },
+  },
+  {
     name: "Lyon",
     coords: [45.764, 4.8357],
     population: 506615,
