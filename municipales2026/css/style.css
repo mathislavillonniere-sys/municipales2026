@@ -120,7 +120,7 @@ h1 {
 
 /* Force un espacement supplémentaire juste après le header (sélecteur spécifique) */
 header + .container {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 /* --- HERO BANNER (ACCUEIL) --- */
@@ -201,7 +201,7 @@ header + .container {
   overflow: hidden;
 
   /* Margin top réduite */
-  margin-top: 70px;
+  margin-top: 80px;
   position: relative;
   background-color: var(--map-bg); /* Couleur mer par défaut en fond */
 }
