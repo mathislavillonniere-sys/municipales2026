@@ -4187,7 +4187,7 @@ const citiesData = [
       {
         name: "Doriane Bécue",
         party: "Divers Droite",
-        isReelected,
+        isReelected: true,
         isMayor: true,
         color: "#adc1fd",
         score: "55,43%",
