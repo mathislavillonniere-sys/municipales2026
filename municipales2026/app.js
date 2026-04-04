@@ -3448,7 +3448,7 @@ const citiesData = [
       ],
       tour2: [
         { candidate: "Participation", score: "57,55%" },
-        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,01%%" },
+        { candidate: "Vote blanc", party: "Non comptabilisé", score: "1,01%" },
         { candidate: "Vote Nul", party: "Non comptabilisé", score: "0,74%" },
       ],
     },
